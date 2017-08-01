@@ -167,31 +167,31 @@
 /*----------------------------
  price-slider active
 ------------------------------ */  
-    $( "#slider-range" ).slider({
-        range: true,
-        min: -80,
-        max: 460,
-        values: [ 25, 325 ],
-        slide: function( event, ui ) {
-		$( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
-        }
-    });
-    $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-	   " - £" + $( "#slider-range" ).slider( "values", 1 ) );
+  //   $( "#slider-range" ).slider({
+  //       range: true,
+  //       min: -80,
+  //       max: 460,
+  //       values: [ 25, 325 ],
+  //       slide: function( event, ui ) {
+		// $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+  //       }
+  //   });
+    // $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+	   // " - £" + $( "#slider-range" ).slider( "values", 1 ) );
                	  
 /*--------------------------
  Elevatezoom 
 ---------------------------- */	
-    $('#zoom1').elevateZoom({
-        gallery:'gallery_01',
-        responsive : true, 
-        galleryActiveClass: 'active', 
-        imageCrossfade: true,
-        easing : true,
-        cursor: 'default',
-        zoomWindowFadeIn: 300,
-        zoomWindowFadeOut: 350
-    });
+    // $('#zoom1').elevateZoom({
+    //     gallery:'gallery_01',
+    //     responsive : true, 
+    //     galleryActiveClass: 'active', 
+    //     imageCrossfade: true,
+    //     easing : true,
+    //     cursor: 'default',
+    //     zoomWindowFadeIn: 300,
+    //     zoomWindowFadeOut: 350
+    // });
     
 /*----------------------------------------------
     Personal Address toggle function
@@ -215,29 +215,29 @@
 /*--------------------------
     ScrollUp
 ---------------------------- */	
-	$.scrollUp({
-        scrollText: '<i class="fa fa-angle-up"></i>',
-        easingType: 'linear',
-        scrollSpeed: 900,
-        animation: 'fade'
-    });
+	// $.scrollUp({
+ //        scrollText: '<i class="fa fa-angle-up"></i>',
+ //        easingType: 'linear',
+ //        scrollSpeed: 900,
+ //        animation: 'fade'
+ //    });
     
 /*------------------------------------
 	Video Player
 --------------------------------------*/
-    jQuery("#bgndVideo").YTPlayer({
-        showControls: false
-    });
+    // jQuery("#bgndVideo").YTPlayer({
+    //     showControls: false
+    // });
  
 /*------------------------------------
 	MailChimp
 --------------------------------------*/
-    $('#mc-form').ajaxChimp({
-        language: 'en',
-        callback: mailChimpResponse,
-        // ADD YOUR MAILCHIMP URL BELOW HERE!
-        url: 'http://themeshaven.us8.list-manage.com/subscribe/post?u=759ce8a8f4f1037e021ba2922&amp;id=a2452237f8'
-    });
+    // $('#mc-form').ajaxChimp({
+    //     language: 'en',
+    //     callback: mailChimpResponse,
+    //     // ADD YOUR MAILCHIMP URL BELOW HERE!
+    //     url: 'http://themeshaven.us8.list-manage.com/subscribe/post?u=759ce8a8f4f1037e021ba2922&amp;id=a2452237f8'
+    // });
     
     function mailChimpResponse(resp) {
         
@@ -253,9 +253,9 @@
 /*--------------------------
     Textillate 
 ---------------------------- */  
-    $('.tlt').textillate({
-        loop: true
-    });
+    // $('.tlt').textillate({
+    //     loop: true
+    // });
     
 /*--------------------------
     ColorSwitcher
