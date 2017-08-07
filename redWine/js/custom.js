@@ -171,12 +171,11 @@ $(document).ready(function() {
 	'use strict';
 	$('.view-project').on('click', function(e) {
 		e.preventDefault();
-		
 		var href 			= $(this).attr('href') + ' .portfolio-project',
 			portfolioWrap	= $('.porfolio-container'),
 			contentLoaded 	= $('#portfolio-load'),
 			offset			= $('#section-screenshots').offset().top;
-		
+
 		portfolioWrap.animate({'left':'-120%'},{duration:400,queue:false});
 		portfolioWrap.fadeOut(400);
 		$('html, body').animate({scrollTop: offset},{duration:800,queue:true});
