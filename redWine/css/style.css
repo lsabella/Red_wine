@@ -536,7 +536,7 @@ border: 0 !important;
 
 /* ================ ScreenShots Section ================ */
 #section-screenshots {
-	background-color:lightgray;
+<--!	background-color:lightgray;-->
 	color:#e5e5e5;
 }
 
