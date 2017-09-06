@@ -811,6 +811,55 @@
 
 <div id="quickview-wrapper">
     <!-- Modal -->
+    <div class="modal fade" id="productModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-product">
+                        <div class="product-images">
+                            <div class="main-image images">
+                                <img alt="" src="assets/img/product/static2.jpg">
+                            </div>
+                        </div><!-- .product-images -->
+
+                        <div class="product-info">
+                            <h1>Diam quis cursus</h1>
+                            <div class="price-box">
+                                <p class="price"><span class="special-price"><span class="amount">$132.00</span></span></p>
+                            </div>
+                            <a href="shop.html" class="see-all">See all features</a>
+                            <div class="quick-add-to-cart">
+                                <form method="post" class="cart">
+                                    <div class="numbers-row">
+                                        <input type="number" id="french-hens" value="3">
+                                    </div>
+                                    <button class="single-add-to-cart-button" type="submit">Add to cart</button>
+                                </form>
+                            </div>
+                            <div class="quick-desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero vulputate rutrum.
+                            </div>
+                            <div class="social-sharing">
+                                <div class="widget widget_socialsharing_widget">
+                                    <h3 class="widget-title-modal">Share this product</h3>
+                                    <ul class="social-icons">
+                                        <li><a target="_blank" title="Facebook" href="#" class="facebook social-icon"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a target="_blank" title="Twitter" href="#" class="twitter social-icon"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a target="_blank" title="Pinterest" href="#" class="pinterest social-icon"><i class="fa fa-pinterest"></i></a></li>
+                                        <li><a target="_blank" title="Google +" href="#" class="gplus social-icon"><i class="fa fa-google-plus"></i></a></li>
+                                        <li><a target="_blank" title="LinkedIn" href="#" class="linkedin social-icon"><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div><!-- .product-info -->
+                    </div><!-- .modal-product -->
+                </div><!-- .modal-body -->
+            </div><!-- .modal-content -->
+        </div><!-- .modal-dialog -->
+    </div>
     <!-- END Modal -->
 </div>
 
@@ -865,7 +914,9 @@
 
 <!-- footer-bottom -->
 <script>
-<!--红葡萄酒-->
+function opendetail(){
+console.log('弹出具体的信息')
+}
 var redwine = document.getElementById('redwine')
 var redwineData=[
 {name:" 德达侯爵酒庄干红葡萄酒 (60%赤霞珠,30%美乐,10%小维度)",productlink:'assets/img/redwine/dedahoujue.jpg'},
@@ -886,24 +937,17 @@ var redHTML='';
 var whiteHTML='';
 var packageHTML='';
 for(var o in redwineData){
-redHTML +='<div class=\"col-xs-12 col-width\"><div class=\"single-product\"><div class=\"single-product-item\"><div class=\"single-product-img clearfix hover-effect\"><a href=\"#\"><img class=\"productlink primary-image\" src=\"\" alt=\"product\"></a><div class=\"wish-icon-hover text-center clearfix\"><div class=\"hover-text\"><tag></tag><ul><li><a id=\"popModal\" class=\"modal-view\" href=\"#\" data-toggle=\"modal\" data-target=\"#productModal\"><i class=\"fa fa-eye\"></i></a></li></ul></div></div></div></div></div></div>'
+redHTML +='<div class=\"col-xs-12 col-width\"><div class=\"single-product\"><div class=\"single-product-item\"><div class=\"single-product-img clearfix hover-effect\"><a href=\"#\"><img class=\"productlink primary-image\" src=\"\" alt=\"product\"></a><div class=\"wish-icon-hover text-center clearfix\"><div class=\"hover-text\"><tag></tag><ul><li><a class=\"modal-view\" href=\"#\" data-toggle=\"modal\" data-target=\"#productModal\" onclick=\"opendetail()\"><i class=\"fa fa-eye\"></i></a></li></ul></div></div></div></div></div></div>'
 }
 redwine.innerHTML = redHTML
 for (var o in redwineData){
 let needName = document.getElementsByTagName('tag')
-
-<!--let popTag = document.getElementById('popModal')-->
-<!--popTag.dataset.target = '#redwine_'+i-->
-<!--console.log(popTag.dataset.target,i)-->
-<!--console.log(popTag)-->
 needName[i].innerHTML = redwineData[o].name
 let linkName = document.getElementsByClassName('productlink')
 linkName[i].src = redwineData[o].productlink
 i++
 }
 
-
-<!--白葡萄酒-->
 var whitewine = document.getElementById('whitewine')
 var whitewineData=[
 {name:" 布蓝乔木贵腐酒 (12%长相思,83%赛美容,5%穆斯卡代)",productlink:'assets/img/whitewine/bulanqiaomu.jpg'},
@@ -922,8 +966,6 @@ linkName[i].src = whitewineData[o].productlink
 i++
 }
 
-
-<!--包装盒-->
 var package = document.getElementById('package')
 var packageData=[
 {name:" 上夜丘 特制包装盒",productlink:'assets/img/package/上夜丘.jpg'},
@@ -947,7 +989,7 @@ var packageData=[
 for(var o in packageData){
 packageHTML +='<div class=\"col-xs-12 col-width\"><div class=\"single-product\"><div class=\"single-product-item\"><div class=\"single-product-img clearfix hover-effect\"><a href=\"#\"><img class=\"productlink primary-image\" src=\"\" alt=\"product\"></a><div class=\"wish-icon-hover text-center clearfix\"><div class=\"hover-text\"><tag></tag><ul><li><a class=\"modal-view\" href=\"#\" data-toggle=\"modal\" data-target=\"#productModal\"><i class=\"fa fa-eye\"></i></a></li></ul></div></div></div></div></div></div>'
 }
-package.innerHTML = packageHTML;
+package.innerHTML = packageHTML
 for (var o in packageData){
 let needName = document.getElementsByTagName('tag')
 needName[i].innerHTML = packageData[o].name
@@ -956,11 +998,8 @@ linkName[i].src = packageData[o].productlink
 i++
 }
 </script>
-<!--pop-->
-<script>
-    var popBox = document.getElementById('quickview-wrapper');
-    popBox.innerHTML ='<div class=\"modal fade\" id=\"productModal\" tabindex=\"-1\" role=\"dialog\"><div class=\"modal-dialog\" role=\"document\"><div class=\"modal-content\"><div class=\"modal-header\"><button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button></div><div class=\"modal-body\"><div class=\"modal-product\"><div class=\"product-images\"><div class=\"main-image images\"><img alt=\"\" src=\"assets/img/redwine/dedahoujue.jpg\"></div></div><div class=\"product-info\"><h1 style=\"margin-bottom:40px;\">德达侯爵酒庄干红葡萄酒</h1><hgroup style=\"color:gray;font-size:20px\"><h4>产地：<span>法国<span/></h4><h4>年份：<span>2004<span/></h4><h4>酒精度：<span>12.5%VOL<span/></h4><h4>产区：<span>玛歌<span/></h4><h4>葡萄品种：<span>60%赤霞珠,30%美乐,10%小维度<span/></h4></hgroup><div class=\"quick-desc\" style=\"margin-top:20px;color:gray;\"><span>品酒辞：</span></span><span>美丽的颜色，深而结实的石榴色。复杂的黑樱桃，紫罗兰的花香和细微之处的芳香和矿物(石墨)和雪松的香气。尾韵是烘培，咖啡和香草味道。入口饱满，圆润，肉质柔滑，强而有力，单宁柔顺。</span></div></div></div></div></div></div></div>';
-</script>
+
+
 <script src="assets/plugins/jquery-1.9.1.min.js"></script>
 <!-- BOOTSTRAP SCRIPTS  -->
 <script src="assets/plugins/bootstrap.js"></script>
