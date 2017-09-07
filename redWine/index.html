@@ -865,37 +865,42 @@
 
 <!-- footer-bottom -->
 <script>
+function getId(id){
+console.log(id);
+detailId = id;
+console.log('detailId',detailId)
+}
 <!--红葡萄酒-->
 var redwine = document.getElementById('redwine')
 var redwineData=[
-{name:" 德达侯爵酒庄干红葡萄酒 (60%赤霞珠,30%美乐,10%小维度)",productlink:'assets/img/redwine/dedahoujue.jpg'},
-{name:" 靓太阳酒庄干红葡萄酒 (95%美乐,5%品丽珠)",productlink:'assets/img/redwine/beausoleil.jpg'},
-{name:" 贝拉尔酒庄干红葡萄酒 (70%赤霞珠,25%美乐,5%品丽珠)",productlink:'assets/img/redwine/belair.jpg'},
-{name:" 波斯卡酒庄干红葡萄酒 (100%美乐)",productlink:'assets/img/redwine/bocage.jpg'},
-{name:" 大布娇酒庄干红葡萄酒 (50%赤霞珠,50%美乐)",productlink:'assets/img/redwine/gressier.jpg'},
-{name:" 艺术之源酒庄干红葡萄酒 (美乐 MERLOT)",productlink:'assets/img/redwine/larteau.jpg'},
-{name:" 拉索斯酒庄干红葡萄酒 (45%赤霞珠,55%美乐)",productlink:'assets/img/redwine/lassus.jpg'},
-{name:" 浪琴慕沙酒庄干红葡萄酒 (70%赤霞珠,30%美乐)",productlink:'assets/img/redwine/Lynch.jpg'},
-{name:" 美拉德酒庄干红葡萄酒 (10%赤霞珠,80%美乐,10%品丽珠)",productlink:'assets/img/redwine/maillard.jpg'},
-{name:" 玛格斯酒庄干红葡萄酒 (30%赤霞珠,50%美乐,20%品丽珠)",productlink:'assets/img/redwine/Marges.jpg'},
-{name:" 宝隆帝酒庄干红葡萄酒 (50%赤霞珠,50%美乐)",productlink:'assets/img/redwine/plantey.jpg'},
-{name:" 圣伽美酒庄干红葡萄酒 (50%赤霞珠,50%美乐)",productlink:'assets/img/redwine/sainte.jpg'}
+{id:"red_0",name:" 德达侯爵酒庄干红葡萄酒 (60%赤霞珠,30%美乐,10%小维度)",productlink:'assets/img/redwine/dedahoujue.jpg'},
+{id:"red_1",name:" 靓太阳酒庄干红葡萄酒 (95%美乐,5%品丽珠)",productlink:'assets/img/redwine/beausoleil.jpg'},
+{id:"red_2",name:" 贝拉尔酒庄干红葡萄酒 (70%赤霞珠,25%美乐,5%品丽珠)",productlink:'assets/img/redwine/belair.jpg'},
+{id:"red_3",name:" 波斯卡酒庄干红葡萄酒 (100%美乐)",productlink:'assets/img/redwine/bocage.jpg'},
+{id:"red_4",name:" 大布娇酒庄干红葡萄酒 (50%赤霞珠,50%美乐)",productlink:'assets/img/redwine/gressier.jpg'},
+{id:"red_5",name:" 艺术之源酒庄干红葡萄酒 (美乐 MERLOT)",productlink:'assets/img/redwine/larteau.jpg'},
+{id:"red_6",name:" 拉索斯酒庄干红葡萄酒 (45%赤霞珠,55%美乐)",productlink:'assets/img/redwine/lassus.jpg'},
+{id:"red_7",name:" 浪琴慕沙酒庄干红葡萄酒 (70%赤霞珠,30%美乐)",productlink:'assets/img/redwine/Lynch.jpg'},
+{id:"red_8",name:" 美拉德酒庄干红葡萄酒 (10%赤霞珠,80%美乐,10%品丽珠)",productlink:'assets/img/redwine/maillard.jpg'},
+{id:"red_9",name:" 玛格斯酒庄干红葡萄酒 (30%赤霞珠,50%美乐,20%品丽珠)",productlink:'assets/img/redwine/Marges.jpg'},
+{id:"red_10",name:" 宝隆帝酒庄干红葡萄酒 (50%赤霞珠,50%美乐)",productlink:'assets/img/redwine/plantey.jpg'},
+{id:"red_11",name:" 圣伽美酒庄干红葡萄酒 (50%赤霞珠,50%美乐)",productlink:'assets/img/redwine/sainte.jpg'}
 ];
 var i=0;
 var redHTML='';
 var whiteHTML='';
 var packageHTML='';
+var detailId='';
 for(var o in redwineData){
-redHTML +='<div class=\"col-xs-12 col-width\"><div class=\"single-product\"><div class=\"single-product-item\"><div class=\"single-product-img clearfix hover-effect\"><a href=\"#\"><img class=\"productlink primary-image\" src=\"\" alt=\"product\"></a><div class=\"wish-icon-hover text-center clearfix\"><div class=\"hover-text\"><tag></tag><ul><li><a id=\"popModal\" class=\"modal-view\" href=\"#\" data-toggle=\"modal\" data-target=\"#productModal\"><i class=\"fa fa-eye\"></i></a></li></ul></div></div></div></div></div></div>'
+redHTML +='<div class=\"col-xs-12 col-width\"><div class=\"single-product\"><div class=\"single-product-item\">'+
+'<div class=\"single-product-img clearfix hover-effect\"><a href=\"#\"><img class=\"productlink primary-image\" src=\"\" alt=\"product\">'+
+'</a><div class=\"wish-icon-hover text-center clearfix\"><div class=\"hover-text\"><tag></tag><ul><li><a class=\"modal-view popModal\" href=\"#\" data-toggle=\"modal\" data-id=\"id\" data-target=\"#productModal\" onclick=\"getId(this.dataset.id)\"><i class=\"fa fa-eye\"></i></a></li></ul></div></div></div></div></div></div>'
 }
 redwine.innerHTML = redHTML
 for (var o in redwineData){
 let needName = document.getElementsByTagName('tag')
-console.log(needName)
-<!--let popTag = document.getElementById('popModal')-->
-<!--popTag.dataset.target = '#redwine_'+i-->
-<!--console.log(popTag.dataset.target,i)-->
-<!--console.log(popTag)-->
+let popTag = document.getElementsByClassName('popModal')
+popTag[i].dataset.id = redwineData[o].id
 needName[i].innerHTML = redwineData[o].name
 let linkName = document.getElementsByClassName('productlink')
 linkName[i].src = redwineData[o].productlink
@@ -906,17 +911,19 @@ i++
 <!--白葡萄酒-->
 var whitewine = document.getElementById('whitewine')
 var whitewineData=[
-{name:" 布蓝乔木贵腐酒 (12%长相思,83%赛美容,5%穆斯卡代)",productlink:'assets/img/whitewine/bulanqiaomu.jpg'},
-{name:" 嘉梦丽丝贵腐酒 (7%长相思,90%赛美容,3%穆斯卡代)",productlink:'assets/img/whitewine/jiamenglisi.jpg'},
-{name:" 玛诺白葡萄酒 (45%长相思,40%赛美容,15%穆斯卡代)",productlink:'assets/img/whitewine/magneau.jpg'}
+{id:"white_0",name:" 布蓝乔木贵腐酒 (12%长相思,83%赛美容,5%穆斯卡代)",productlink:'assets/img/whitewine/bulanqiaomu.jpg'},
+{id:"white_1",name:" 嘉梦丽丝贵腐酒 (7%长相思,90%赛美容,3%穆斯卡代)",productlink:'assets/img/whitewine/jiamenglisi.jpg'},
+{id:"white_2",name:" 玛诺白葡萄酒 (45%长相思,40%赛美容,15%穆斯卡代)",productlink:'assets/img/whitewine/magneau.jpg'}
 ];
 for(var o in whitewineData){
-whiteHTML +='<div class=\"col-xs-12 col-width\"><div class=\"single-product\"><div class=\"single-product-item\"><div class=\"single-product-img clearfix hover-effect\"><a href=\"#\"><img class=\"productlink primary-image\" src=\"\" alt=\"product\"></a><div class=\"wish-icon-hover text-center clearfix\"><div class=\"hover-text\"><tag></tag><ul><li><a class=\"modal-view\" href=\"#\" data-toggle=\"modal\" data-target=\"#productModal\"><i class=\"fa fa-eye\"></i></a></li></ul></div></div></div></div></div></div>'
+whiteHTML +='<div class=\"col-xs-12 col-width\"><div class=\"single-product\"><div class=\"single-product-item\"><div class=\"single-product-img clearfix hover-effect\"><a href=\"#\"><img class=\"productlink primary-image\" src=\"\" alt=\"product\"></a><div class=\"wish-icon-hover text-center clearfix\"><div class=\"hover-text\"><tag></tag><ul><li><a class=\"modal-view popModal\" href=\"#\" data-toggle=\"modal\" data-target=\"#productModal\" data-id=\"id\" onclick=\"getId(this.dataset.id)\"><i class=\"fa fa-eye\"></i></a></li></ul></div></div></div></div></div></div>'
 }
 whitewine.innerHTML = whiteHTML
 for (var o in whitewineData){
 let needName = document.getElementsByTagName('tag')
 needName[i].innerHTML = whitewineData[o].name
+let popTag = document.getElementsByClassName('popModal')
+popTag[i].dataset.id = whitewineData[o].id
 let linkName = document.getElementsByClassName('productlink')
 linkName[i].src = whitewineData[o].productlink
 i++
@@ -926,31 +933,33 @@ i++
 <!--包装盒-->
 var package = document.getElementById('package')
 var packageData=[
-{name:" 上夜丘 特制包装盒",productlink:'assets/img/package/上夜丘.jpg'},
-{name:" 嘉梦丽思 ",productlink:'assets/img/package/嘉梦丽思.jpg'},
-{name:" 圣伽美 ",productlink:'assets/img/package/圣伽美.jpg'},
-{name:" 大布娇",productlink:'assets/img/package/大布娇.jpg'},
-{name:" 宝隆帝 ",productlink:'assets/img/package/宝隆帝.jpg'},
-{name:" 布兰乔木 ",productlink:'assets/img/package/布兰乔木.jpg'},
-{name:" 布莱尼 ",productlink:'assets/img/package/布莱尼.jpg'},
-{name:" 德达侯爵 ",productlink:'assets/img/package/德达侯爵.jpg'},
-{name:" 拉索斯 ",productlink:'assets/img/package/拉索斯.jpg'},
-{name:" 波卡斯 ",productlink:'assets/img/package/波卡斯.jpg'},
-{name:" 浪琴慕沙 ",productlink:'assets/img/package/浪琴慕沙.jpg'},
-{name:" 玛格斯 ",productlink:'assets/img/package/玛格斯.jpg'},
-{name:" 玛诺 ",productlink:'assets/img/package/玛诺.jpg'},
-{name:" 美拉德 ",productlink:'assets/img/package/美拉德.jpg'},
-{name:" 艺术之源 ",productlink:'assets/img/package/艺术之源.jpg'},
-{name:" 贝拉尔 ",productlink:'assets/img/package/贝拉尔.jpg'},
-{name:" 靓太阳 ",productlink:'assets/img/package/靓太阳.jpg'}
+{id:"package_0",name:" 上夜丘 特制包装盒",productlink:'assets/img/package/上夜丘.jpg'},
+{id:"package_1",name:" 嘉梦丽思 ",productlink:'assets/img/package/嘉梦丽思.jpg'},
+{id:"package_2",name:" 圣伽美 ",productlink:'assets/img/package/圣伽美.jpg'},
+{id:"package_3",name:" 大布娇",productlink:'assets/img/package/大布娇.jpg'},
+{id:"package_4",name:" 宝隆帝 ",productlink:'assets/img/package/宝隆帝.jpg'},
+{id:"package_5",name:" 布兰乔木 ",productlink:'assets/img/package/布兰乔木.jpg'},
+{id:"package_6",name:" 布莱尼 ",productlink:'assets/img/package/布莱尼.jpg'},
+{id:"package_7",name:" 德达侯爵 ",productlink:'assets/img/package/德达侯爵.jpg'},
+{id:"package_8",name:" 拉索斯 ",productlink:'assets/img/package/拉索斯.jpg'},
+{id:"package_9",name:" 波卡斯 ",productlink:'assets/img/package/波卡斯.jpg'},
+{id:"package_10",name:" 浪琴慕沙 ",productlink:'assets/img/package/浪琴慕沙.jpg'},
+{id:"package_11",name:" 玛格斯 ",productlink:'assets/img/package/玛格斯.jpg'},
+{id:"package_12",name:" 玛诺 ",productlink:'assets/img/package/玛诺.jpg'},
+{id:"package_13",name:" 美拉德 ",productlink:'assets/img/package/美拉德.jpg'},
+{id:"package_14",name:" 艺术之源 ",productlink:'assets/img/package/艺术之源.jpg'},
+{id:"package_15",name:" 贝拉尔 ",productlink:'assets/img/package/贝拉尔.jpg'},
+{id:"package_16",name:" 靓太阳 ",productlink:'assets/img/package/靓太阳.jpg'}
 ];
 for(var o in packageData){
-packageHTML +='<div class=\"col-xs-12 col-width\"><div class=\"single-product\"><div class=\"single-product-item\"><div class=\"single-product-img clearfix hover-effect\"><a href=\"#\"><img class=\"productlink primary-image\" src=\"\" alt=\"product\"></a><div class=\"wish-icon-hover text-center clearfix\"><div class=\"hover-text\"><tag></tag><ul><li><a class=\"modal-view\" href=\"#\" data-toggle=\"modal\" data-target=\"#productModal\"><i class=\"fa fa-eye\"></i></a></li></ul></div></div></div></div></div></div>'
+packageHTML +='<div class=\"col-xs-12 col-width\"><div class=\"single-product\"><div class=\"single-product-item\"><div class=\"single-product-img clearfix hover-effect\"><a href=\"#\"><img class=\"productlink primary-image\" src=\"\" alt=\"product\"></a><div class=\"wish-icon-hover text-center clearfix\"><div class=\"hover-text\"><tag></tag><ul><li><a class=\"modal-view popModal\" href=\"#\" data-toggle=\"modal\" data-target=\"#productModal\" data-id=\"id\" onclick=\"getId(this.dataset.id)\"><i class=\"fa fa-eye\"></i></a></li></ul></div></div></div></div></div></div>'
 }
 package.innerHTML = packageHTML;
 for (var o in packageData){
 let needName = document.getElementsByTagName('tag')
 needName[i].innerHTML = packageData[o].name
+let popTag = document.getElementsByClassName('popModal')
+popTag[i].dataset.id = packageData[o].id
 let linkName = document.getElementsByClassName('productlink')
 linkName[i].src = packageData[o].productlink
 i++
@@ -959,6 +968,20 @@ i++
 <!--pop-->
 <script>
     var popBox = document.getElementById('quickview-wrapper');
+    var popDetails=[
+    {id:"red_0",name:" 德达侯爵酒庄干红葡萄酒 ",productlink:'assets/img/redwine/dedahoujue.jpg'},
+    {id:"red_1",name:" 靓太阳酒庄干红葡萄酒 ",productlink:'assets/img/redwine/beausoleil.jpg'},
+    {id:"red_2",name:" 贝拉尔酒庄干红葡萄酒 ",productlink:'assets/img/redwine/belair.jpg'},
+    {id:"red_3",name:" 波斯卡酒庄干红葡萄酒 ",productlink:'assets/img/redwine/bocage.jpg'},
+    {id:"red_4",name:" 大布娇酒庄干红葡萄酒 ",productlink:'assets/img/redwine/gressier.jpg'},
+    {id:"red_5",name:" 艺术之源酒庄干红葡萄酒 ",productlink:'assets/img/redwine/larteau.jpg'},
+    {id:"red_6",name:" 拉索斯酒庄干红葡萄酒 ",productlink:'assets/img/redwine/lassus.jpg'},
+    {id:"red_7",name:" 浪琴慕沙酒庄干红葡萄酒 ",productlink:'assets/img/redwine/Lynch.jpg'},
+    {id:"red_8",name:" 美拉德酒庄干红葡萄酒 ",productlink:'assets/img/redwine/maillard.jpg'},
+    {id:"red_9",name:" 玛格斯酒庄干红葡萄酒 ",productlink:'assets/img/redwine/Marges.jpg'},
+    {id:"red_10",name:" 宝隆帝酒庄干红葡萄酒 ",productlink:'assets/img/redwine/plantey.jpg'},
+    {id:"red_11",name:" 圣伽美酒庄干红葡萄酒 ",productlink:'assets/img/redwine/sainte.jpg'}
+    ];
     popBox.innerHTML ='<div class=\"modal fade\" id=\"productModal\" tabindex=\"-1\" role=\"dialog\"><div class=\"modal-dialog\" role=\"document\"><div class=\"modal-content\"><div class=\"modal-header\"><button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button></div><div class=\"modal-body\"><div class=\"modal-product\"><div class=\"product-images\"><div class=\"main-image images\"><img alt=\"\" src=\"assets/img/redwine/dedahoujue.jpg\"></div></div><div class=\"product-info\"><h1 style=\"margin-bottom:40px;\">德达侯爵酒庄干红葡萄酒</h1><hgroup style=\"color:gray;font-size:20px\"><h4>产地：<span>法国<span/></h4><h4>年份：<span>2004<span/></h4><h4>酒精度：<span>12.5%VOL<span/></h4><h4>产区：<span>玛歌<span/></h4><h4>葡萄品种：<span>60%赤霞珠,30%美乐,10%小维度<span/></h4></hgroup><div class=\"quick-desc\" style=\"margin-top:20px;color:gray;\"><span>品酒辞：</span></span><span>美丽的颜色，深而结实的石榴色。复杂的黑樱桃，紫罗兰的花香和细微之处的芳香和矿物(石墨)和雪松的香气。尾韵是烘培，咖啡和香草味道。入口饱满，圆润，肉质柔滑，强而有力，单宁柔顺。</span></div></div></div></div></div></div></div>';
 </script>
 <script src="assets/plugins/jquery-1.9.1.min.js"></script>
