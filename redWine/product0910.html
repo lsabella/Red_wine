@@ -93,16 +93,16 @@
 <!--=== ScreenShots section Starts ===-->
 <section id="section-screenshots" class="screenshots-wrap">
     <div class="container screenshots animated" data-animation="fadeInUp" data-animation-delay="1000">
-        <!--<div class="col-md-10 col-md-offset-1 center section-title">-->
-            <!--<h3 style="color:black;letter-spacing:1.5em;text-indent:1.5em;">红葡萄酒</h3>-->
-        <!--</div>-->
+        <div class="row porfolio-container col-md-10 col-md-offset-1 center section-title">
+            <h3 style="color:black;letter-spacing:1.5em;text-indent:1.5em;">红葡萄酒</h3>
+        </div>
         <div id="productredBox" class="row porfolio-container">
         </div>
-        <!--<div class="col-md-10 col-md-offset-1 center section-title">-->
-            <!--<h3 style="color:black;letter-spacing:1.5em;text-indent:1.5em;">白葡萄酒</h3>-->
-        <!--</div>-->
+        <div class="row porfolio-container col-md-10 col-md-offset-1 center section-title">
+            <h3 style="color:black;letter-spacing:1.5em;text-indent:1.5em;">白葡萄酒</h3>
+        </div>
         <div id="productwhiteBox" class="row porfolio-container">
-
+        </div>
 
         <div id="portfolio-loader" class="center">
             <div class="loading-circle fa-spin"></div>
@@ -114,26 +114,26 @@
                 <div class="portfolio-project">
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1 center section-title">
-                            <h4>Project Title</h4>
+                            <h4 id="productName" style="color:black;">德达侯爵酒庄干红葡萄酒</h4>
                         </div>
-                        <div class="col-md-5 project-photo">
-                            <img src="images/1.jpg" alt="" />
+                        <div class="col-md-4 project-photo">
+                            <img id="productImg" src="" alt="" />
                         </div>
-                        <div class="col-md-3 project-details">
-                            <h5>Project Details</h5>
+                        <div class="col-md-8 project-details">
+                            <h5>产品详情</h5>
                             <ul class="details-list">
-                                <li><i class="fa fa-th-list"></i> <strong class="strong">Category: </strong> Project category</li>
-                                <li><i class="fa fa-user"></i> <strong class="strong">Designer: </strong> MH Rafi</li>
-                                <li><i class="fa fa-calendar"></i> <strong class="strong">Date: </strong> 27 Dec 2014</li>
-                                <li><i class="fa fa-group"></i> <strong class="strong">Client: </strong> Jhone Doe</li>
-                                <li><i class="fa fa-link"></i> <strong class="strong">Project url: </strong> <a href="#"><strong>themegret</strong></a></li>
+                                <li><i class="fa fa-th-list"></i> <strong class="strong">产地: </strong><span id="productPlace"></span></li>
+                                <li><i class="fa fa-calendar"></i> <strong class="strong">年份: </strong> <span id="yearDate"></span></li>
+                                <li><i class="fa fa-tint"></i> <strong class="strong">酒精度: </strong><span id="winePercent"></span></li>
+                                <li><i class="fa fa-institution"></i> <strong class="strong">产区: </strong><span id="productArea"></span></li>
+                                <li><i class="fa fa-delicious"></i> <strong class="strong">葡萄品种: </strong><span id="detailkinds"></span></li>
                             </ul>
                         </div>
-                        <div class="col-md-4 project-info">
-                            <h5>Project Info</h5>
-                            <p>Without. Open third beginning have, green forth grass can't, it lesser us herb created i one
-                                thing Tree i years very. Man itself in multiply after fly had give sixth waters. First you'll won't sixth moving.
-                                Man itself in multiply after fly had give sixth waters. First you'll won't sixth moving.</p>
+                        <div class="col-md-8 project-info" style="padding:2em;">
+                        </div>
+                        <div class="col-md-8 project-info">
+                            <h5>品酒辞</h5>
+                            <p id="wineSaying" style="color:slategray;"></p>
                         </div>
                     </div>
                 </div>
@@ -212,8 +212,8 @@ redwine:[
 {id:"red_7",name:" 浪琴慕沙酒庄干红葡萄酒 (70%赤霞珠,30%美乐)",productlink:'assets/img/redwine/Lynch.jpg',productName:"浪琴慕沙酒庄干红葡萄酒",productPlace:"法国",yearDate:"2004",winePercent:"12.5%VOL",productArea:"玛歌",detailkinds:"60%赤霞珠,30%美乐,10%小维度",wineSaying:"美丽的颜色，深而结实的石榴色。复杂的黑樱桃，紫罗兰的花香和细微之处的芳香和矿物(石墨)和雪松的香气。尾韵是烘培，咖啡和香草味道。入口饱满，圆润，肉质柔滑，强而有力，单宁柔顺。"},
 {id:"red_8",name:" 美拉德酒庄干红葡萄酒 (10%赤霞珠,80%美乐,10%品丽珠)",productlink:'assets/img/redwine/maillard.jpg',productName:"美拉德酒庄干红葡萄酒",productPlace:"法国",yearDate:"2004",winePercent:"12.5%VOL",productArea:"玛歌",detailkinds:"60%赤霞珠,30%美乐,10%小维度",wineSaying:"美丽的颜色，深而结实的石榴色。复杂的黑樱桃，紫罗兰的花香和细微之处的芳香和矿物(石墨)和雪松的香气。尾韵是烘培，咖啡和香草味道。入口饱满，圆润，肉质柔滑，强而有力，单宁柔顺。"},
 {id:"red_9",name:" 玛格斯酒庄干红葡萄酒 (30%赤霞珠,50%美乐,20%品丽珠)",productlink:'assets/img/redwine/Marges.jpg',productName:"玛格斯酒庄干红葡萄酒",productPlace:"法国",yearDate:"2004",winePercent:"12.5%VOL",productArea:"玛歌",detailkinds:"60%赤霞珠,30%美乐,10%小维度",wineSaying:"美丽的颜色，深而结实的石榴色。复杂的黑樱桃，紫罗兰的花香和细微之处的芳香和矿物(石墨)和雪松的香气。尾韵是烘培，咖啡和香草味道。入口饱满，圆润，肉质柔滑，强而有力，单宁柔顺。"},
-{id:"red_10",name:" 宝隆帝酒庄干红葡萄酒 (50%赤霞珠,50%美乐)",productlink:'assets/img/redwine/plantey.jpg',productName:"宝隆帝酒庄干红葡萄酒",productPlace:"法国",yearDate:"2004",winePercent:"12.5%VOL",productArea:"玛歌",detailkinds:"60%赤霞珠,30%美乐,10%小维度",wineSaying:"美丽的颜色，深而结实的石榴色。复杂的黑樱桃，紫罗兰的花香和细微之处的芳香和矿物(石墨)和雪松的香气。尾韵是烘培，咖啡和香草味道。入口饱满，圆润，肉质柔滑，强而有力，单宁柔顺。"},
-{id:"red_11",name:" 圣伽美酒庄干红葡萄酒 (50%赤霞珠,50%美乐)",productlink:'assets/img/redwine/sainte.jpg',productName:"圣伽美酒庄干红葡萄酒",productPlace:"法国",yearDate:"2004",winePercent:"12.5%VOL",productArea:"玛歌",detailkinds:"60%赤霞珠,30%美乐,10%小维度",wineSaying:"美丽的颜色，深而结实的石榴色。复杂的黑樱桃，紫罗兰的花香和细微之处的芳香和矿物(石墨)和雪松的香气。尾韵是烘培，咖啡和香草味道。入口饱满，圆润，肉质柔滑，强而有力，单宁柔顺。"}
+{id:"red_10",name:" 宝隆帝酒庄干红葡萄酒 (50%赤霞珠,50%美乐)",productlink:'assets/img/redwine/plantey.jpg',productName:"宝隆帝酒庄干红葡萄酒",productPlace:"法国",yearDate:"2012",winePercent:"13%VOL",productArea:"波亚克",detailkinds:"50%赤霞珠,50%美乐",wineSaying:"改酒呈红宝色，散发着清爽怡人的酒香，其中混合着多种水果的芳香，以及橡木桶赋予此酒的香料气息"},
+{id:"red_11",name:" 圣伽美酒庄干红葡萄酒 (50%赤霞珠,50%美乐)",productlink:'assets/img/redwine/sainte.jpg',productName:"圣伽美酒庄干红葡萄酒",productPlace:"法国",yearDate:"2011",winePercent:"13%VOL",productArea:"上梅多克",detailkinds:"50%赤霞珠,50%美乐",wineSaying:"该款酒果香浓郁，清新，带有糖渍水果的香气，口感丝滑细腻。果香，顺滑，愉悦罗伯特 帕克评分84/100"}
 ],
 whitewine:[
 {id:"white_0",name:" 布蓝乔木贵腐酒 (12%长相思,83%赛美容,5%穆斯卡代)",productlink:'assets/img/whitewine/bulanqiaomu.jpg',productName:"布蓝乔木贵腐酒",productPlace:"法国",yearDate:"2004",winePercent:"12.5%VOL",productArea:"玛歌",detailkinds:"60%赤霞珠,30%美乐,10%小维度",wineSaying:"美丽的颜色，深而结实的石榴色。复杂的黑樱桃，紫罗兰的花香和细微之处的芳香和矿物(石墨)和雪松的香气。尾韵是烘培，咖啡和香草味道。入口饱满，圆润，肉质柔滑，强而有力，单宁柔顺。"},
@@ -244,36 +244,68 @@ var productredBox = document.getElementById('productredBox');
 var productwhiteBox = document.getElementById('productwhiteBox');
 var i = 0
 for(var o in productDatas.redwine){
-    productredBox.innerHTML += '<div class=\"col-md-4 col-sm-4 col-xs-6\"><div class=\"screenshot\"><div class=\"photo-box\"><img src=\"\" alt=\"\" /><div class=\"photo-overlay\"><h4>Wordpress theme</h4></div><span class=\"photo-zoom\"><a class=\"view-project\"><i class=\"fa fa-search-plus fa-2x\"></i></a></span></div></div></div>'
-}
+    productredBox.innerHTML += '<div class=\"col-md-4 col-sm-4 col-xs-6\"><div class=\"screenshot\">'+
+    '<div class=\"photo-box\"><img src=\"\" alt=\"\" /><div class=\"photo-overlay\"><h4></h4></div>'+
+    '<span class=\"photo-zoom\"><a class=\"view-project detailBox\" data-id=\"\" onclick=\"getId(this.dataset.id)">'+
+    '<i class=\"fa fa-search-plus fa-2x\"></i></a></span></div></div></div>'
+};
 for(var o in productDatas.whitewine){
-    productwhiteBox.innerHTML += '<div class=\"col-md-4 col-sm-4 col-xs-6\"><div class=\"screenshot\"><div class=\"photo-box\"><img src=\"\" alt=\"\" /><div class=\"photo-overlay\"><h4>Wordpress theme</h4></div><span class=\"photo-zoom\"><a class=\"view-project\"><i class=\"fa fa-search-plus fa-2x\"></i></a></span></div></div></div>'
-}
+    productwhiteBox.innerHTML += '<div class=\"col-md-4 col-sm-4 col-xs-6\"><div class=\"screenshot\">'+
+    '<div class=\"photo-box\"><img src=\"\" alt=\"\" /><div class=\"photo-overlay\"><h4></h4></div>'+
+    '<span class=\"photo-zoom\"><a class=\"view-project detailBox\" data-id=\"\" onclick=\"getId(this.dataset.id)">'+
+    '<i class=\"fa fa-search-plus fa-2x\"></i></a></span></div></div></div>'
+};
 
 for(var o in productDatas.redwine){
     let nameDisplay = document.getElementsByTagName('h4');
     let proImg = document.getElementsByTagName('img');
+    let detailBox = document.getElementsByClassName('detailBox')
+    detailBox[i].dataset.id = productDatas.redwine[o].id;
     proImg[i].src = productDatas.redwine[o].productlink;
     nameDisplay[i].innerHTML = productDatas.redwine[o].name;
     i++
-}
+};
 for(var o in productDatas.whitewine){
-    i++;
     let nameDisplay = document.getElementsByTagName('h4');
     let proImg = document.getElementsByTagName('img');
+    let detailBox = document.getElementsByClassName('detailBox')
+    detailBox[i].dataset.id = productDatas.whitewine[o].id;
     proImg[i].src = productDatas.whitewine[o].productlink;
     nameDisplay[i].innerHTML = productDatas.whitewine[o].name;
+    i++;
+};
+var productImg = document.getElementById('productImg');
+var productName = document.getElementById('productName');
+var productPlace = document.getElementById('productPlace');
+var yearDate = document.getElementById('yearDate');
+var winePercent = document.getElementById('winePercent');
+var productArea = document.getElementById('productArea');
+var detailkinds = document.getElementById('detailkinds');
+var wineSaying = document.getElementById('wineSaying');
+function getId(id){
+whichKind = id.slice(0,id.indexOf('_'));
+whichDetailId = id.slice(id.indexOf('_')+1)
+if(whichKind === 'red'){
+productImg.src = productDatas.redwine[whichDetailId].productlink;
+productName.innerHTML = productDatas.redwine[whichDetailId].productName;
+productPlace.innerHTML = productDatas.redwine[whichDetailId].productPlace;
+yearDate.innerHTML = productDatas.redwine[whichDetailId].yearDate;
+winePercent.innerHTML = productDatas.redwine[whichDetailId].winePercent;
+productArea.innerHTML = productDatas.redwine[whichDetailId].productArea;
+detailkinds.innerHTML = productDatas.redwine[whichDetailId].detailkinds;
+wineSaying.innerHTML = productDatas.redwine[whichDetailId].wineSaying;
 }
-
-<!--function dragDetail(){-->
-    <!--for(var o in productDatas.whitewine){-->
-        <!--let nameDisplay = document.getElementsByTagName('h4');-->
-        <!--let proImg = document.getElementsByTagName('img');-->
-        <!--proImg[i].src = productDatas.whitewine[o].productlink;-->
-        <!--nameDisplay[i].innerHTML = productDatas.whitewine[o].name;-->
-        <!--i++-->
-    <!--}-->
-   <!--}-->
+if(whichKind === 'white'){
+productImg.src = productDatas.whitewine[whichDetailId].productlink;
+productName.innerHTML = productDatas.whitewine[whichDetailId].productName;
+productPlace.innerHTML = productDatas.whitewine[whichDetailId].productPlace;
+yearDate.innerHTML = productDatas.whitewine[whichDetailId].yearDate;
+winePercent.innerHTML = productDatas.whitewine[whichDetailId].winePercent;
+productArea.innerHTML = productDatas.whitewine[whichDetailId].productArea;
+detailkinds.innerHTML = productDatas.whitewine[whichDetailId].detailkinds;
+wineSaying.innerHTML = productDatas.whitewine[whichDetailId].wineSaying;
+}
+}
 </script>
 <!--==== Js files ====-->
 <!--==== Essential files ====-->
