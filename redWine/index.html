@@ -1,15 +1,15 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
+  
+  <head>
     <meta charset="utf-8" />
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="" />
     <meta name="author" content="" />
     <!--[if IE]>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <![endif]-->
-    <title>Free Multipurpose Template : RUMA</title>
+    <title>弘葡国际贸易有限公司</title>
     <link href="assets/css/custom_css.css" rel="stylesheet">
     <link href="assets/css/responsive.min.css" rel="stylesheet">
     <link href="assets/css/style.min.css" rel="stylesheet">
@@ -29,1004 +29,1045 @@
     <link href="assets/css/owl.carousel.css" rel="stylesheet" />
     <link href="assets/css/meanmenu.min.css" rel="stylesheet" />
     <link href="assets/css/wine-display.css" rel="stylesheet" />
-</head>
-<body>
-
-<div class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
+	<script src="assets/plugins/jquery-1.10.2.js"></script>
+	<script src="assets/plugins/unslider.min.js"></script>
+	</head>
+	<style>
+		.banner { position: relative; overflow: auto; text-align: center; height: 800px;}
+		.banner li { list-style: none; }
+		.banner ul li { float: left; height: 800px; }
+		#b04 { width: 100%;}
+		#b04 .dots { position: absolute; left: 0; right: 0; bottom: 20px;}
+		#b04 .dots li 
+		{ 
+			display: inline-block; 
+			width: 10px; 
+			height: 10px; 
+			margin: 0 4px; 
+			text-indent: -999em; 
+			border: 2px solid #fff; 
+			border-radius: 6px; 
+			cursor: pointer; 
+			opacity: .4; 
+			-webkit-transition: background .5s, opacity .5s; 
+			-moz-transition: background .5s, opacity .5s; 
+			transition: background .5s, opacity .5s;
+		}
+		#b04 .dots li.active 
+		{
+			background: #fff;
+			opacity: 1;
+		}
+		#b04 .arrow { position: absolute; top: 400px;}
+		#b04 #al { left: 15px;}
+		#b04 #ar { right: 15px;}
+	</style>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse"
-                    data-target=".navbar-collapse">
-                <span class="icon-bar"></span> <span class="icon-bar"></span> <span
-                    class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#"><img src="assets/img/弘葡国际.png" style="height:30px;width:30px;margin-top:-5px;"> 弘葡国际</a>
-        </div>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="assets/img/弘葡国际.png" style="height:30px;width:30px;margin-top:-5px;"> 弘葡国际</a></div>
         <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="index.html">首页</a></li>
-                <li><a href="aboutUs.html">关于我们</a></li>
-                <li><a href="product.html">产品中心</a></li>
-                <li><a href="Brewing.html">红酒酿制</a></li>
-                <li><a href="contact.html">联系我们&#038;留言</a></li>
-            </ul>
+          <ul class="nav navbar-nav navbar-right" style="font-weight:900;">
+            <li>
+              <a href="index.html">首页</a></li>
+            <li>
+              <a href="aboutUs.html">关于我们</a></li>
+            <li>
+              <a href="product.html">产品中心</a></li>
+            <li>
+              <a href="Brewing.html">红酒酿制</a></li>
+            <li>
+              <a href="contact.html">联系我们&#038;留言</a></li>
+          </ul>
         </div>
-
+      </div>
     </div>
-</div>
-<!--/.NAVBAR END-->
+	<!-- 首页滚动 start-->
+	<div class="banner" id="b04">
+		<ul>
+			<li><img src="assets/img/1.jpg" alt="" width="100%"></li>
+			<li><img src="assets/img/2.jpg" alt="" width="100%"></li>
+			<li><img src="assets/img/3.jpg" alt="" width="100%"></li>
+		</ul>
+		<a href="javascript:void(0);" class="unslider-arrow04 prev"><img class="arrow" id="al" src="assets/img/arrowl.png" alt="prev" width="20" height="35"></a>
+		<a href="javascript:void(0);" class="unslider-arrow04 next"><img class="arrow" id="ar" src="assets/img/arrowr.png" alt="next" width="20" height="37"></a>
+	</div>
+		<!-- 首页滚动 end-->
+	
+	<script>
+	$(document).ready(function(e) {
+		var unslider04 = $('#b04').unslider({
+			dots: true
+		}),
+		data04 = unslider04.data('unslider');
+		$('.unslider-arrow04').click(function() {
+			var fn = this.className.split(' ')[1];
+			data04[fn]();
+		});
+	});
 
-<div id="carousel-example-generic" class="carousel slide"
-     data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-        <li data-target="#carousel-example-generic" data-slide-to="0"
-            class="active"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-        <div class="item active">
-            <img src="assets/img/2.jpg" style="width: 100%" alt="Third slide">
-        </div>
-        <div class="item">
-            <img src="assets/img/2.jpg" style="width: 100%" alt="Third slide">
-        </div>
-        <div class="item">
-            <img src="assets/img/2.jpg" style="width: 100%" alt="Third slide">
-        </div>
-    </div>
-
-    <!-- Controls -->
-    <a class="left carousel-control" href="#carousel-example-generic"
-       role="button" data-slide="prev"> <span
-            class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span
-            class="sr-only">Previous</span>
-    </a> <a class="right carousel-control" href="#carousel-example-generic"
-            role="button" data-slide="next"> <span
-        class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-</a>
-</div>
-<!--/.首页滚动 END-->
-
-
-
-
-
-<div data-q_id="#portfolio"
-     class="vc_row wpb_row section vc_row-fluid  grid_section"
-     style="background-color: #ffffff; padding-top: 73px; padding-bottom: 0px; text-align: left;">
-    <div class=" section_inner clearfix">
+	</script>
+    <div data-q_id="#portfolio" class="vc_row wpb_row section vc_row-fluid  grid_section" style="background-color: #ffffff; padding-top: 73px; padding-bottom: 0px; text-align: left;">
+      <div class=" section_inner clearfix">
         <div class="section_inner_margin clearfix">
-            <div class="wpb_column vc_column_container vc_col-sm-12">
+          <div class="wpb_column vc_column_container vc_col-sm-12">
+            <div class="wpb_wrapper">
+              <div class="wpb_text_column wpb_content_element ">
                 <div class="wpb_wrapper">
-                    <div class="wpb_text_column wpb_content_element ">
+                  <h2 style="text-align: center;">独特 &nbsp; 意境</h2></div>
+              </div>
+              <div class="separator  small center  " style="margin-top: 21px; margin-bottom: 64px;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="vc_row wpb_row section vc_row-fluid  grid_section" style="background-color: #ffffff; text-align: left;">
+      <div class=" section_inner clearfix">
+        <div class="section_inner_margin clearfix">
+          <div class="wpb_column vc_column_container vc_col-sm-3">
+            <div class="wpb_wrapper">
+              <div class="vc_row wpb_row section vc_row-fluid vc_inner " style="text-align: center;">
+                <div class=" full_section_inner clearfix">
+                  <div class="element_from_fade element_from_fade_on">
+                    <div style="transition-delay: 300ms; -webkit-animation-delay: 300ms; animation-delay: 300ms;">
+                      <div class="wpb_column vc_column_container vc_col-sm-12">
                         <div class="wpb_wrapper">
-                            <h2 style="text-align: center;">独特 &nbsp; 意境</h2>
-
+                          <div class="image_hover" style="" data-transition-delay="">
+                            <div class="images_holder">
+                              <a href="#" target="_self">
+                                <img class="active_image " src="assets/img/home_img/drawing_01.jpg" alt="" style="">
+                                <img class="hover_image" src="assets/img/home_img/drawing_01b.jpg" alt="" style=""></a>
+                            </div>
+                          </div>
+                          <div class="separator  transparent   " style="margin-top: 3px; margin-bottom: 0px;"></div>
+                          <div class="wpb_text_column wpb_content_element ">
+                            <div class="wpb_wrapper">
+                              <h6 style="text-align: center;">优质葡萄</h6></div>
+                          </div>
+                          <div class="separator  transparent   " style="margin-top: 7px; margin-bottom: 0px;"></div>
+                          <div class="wpb_text_column wpb_content_element ">
+                            <div class="wpb_wrapper">
+                              <p style="text-align: center;">Quality grapes</p></div>
+                          </div>
+                          <div class="separator  transparent   " style="margin-top: 55px; margin-bottom: 0px;"></div>
                         </div>
+                      </div>
                     </div>
-                    <div class="separator  small center  "
-                         style="margin-top: 21px; margin-bottom: 64px;"></div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
+          <div class="wpb_column vc_column_container vc_col-sm-3">
+            <div class="wpb_wrapper">
+              <div class="vc_row wpb_row section vc_row-fluid vc_inner " style="text-align: center;">
+                <div class=" full_section_inner clearfix">
+                  <div class="element_from_fade element_from_fade_on">
+                    <div style="transition-delay: 600ms; -webkit-animation-delay: 600ms; animation-delay: 600ms;">
+                      <div class="wpb_column vc_column_container vc_col-sm-12">
+                        <div class="wpb_wrapper">
+                          <div class="image_hover" style="" data-transition-delay="">
+                            <div class="images_holder">
+                              <a href="#" target="_self">
+                                <img class="active_image " src="assets/img/home_img/drawing_02.jpg" alt="" style="">
+                                <img class="hover_image" src="assets/img/home_img/drawing_02b.jpg" alt="" style=""></a>
+                            </div>
+                          </div>
+                          <div class="separator  transparent   " style="margin-top: 3px; margin-bottom: 0px;"></div>
+                          <div class="wpb_text_column wpb_content_element ">
+                            <div class="wpb_wrapper">
+                              <h6 style="text-align: center;">历史的传承</h6></div>
+                          </div>
+                          <div class="separator  transparent   " style="margin-top: 7px; margin-bottom: 0px;"></div>
+                          <div class="wpb_text_column wpb_content_element ">
+                            <div class="wpb_wrapper">
+                              <p style="text-align: center;">Historical heritage</p></div>
+                          </div>
+                          <div class="separator  transparent   " style="margin-top: 55px; margin-bottom: 0px;"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wpb_column vc_column_container vc_col-sm-3">
+            <div class="wpb_wrapper">
+              <div class="vc_row wpb_row section vc_row-fluid vc_inner " style="text-align: center;">
+                <div class=" full_section_inner clearfix">
+                  <div class="element_from_fade element_from_fade_on">
+                    <div style="transition-delay: 900ms; -webkit-animation-delay: 900ms; animation-delay: 900ms;">
+                      <div class="wpb_column vc_column_container vc_col-sm-12">
+                        <div class="wpb_wrapper">
+                          <div class="image_hover" style="" data-transition-delay="">
+                            <div class="images_holder">
+                              <a href="#" target="_self">
+                                <img class="active_image " src="assets/img/home_img/drawing_03.jpg" alt="" style="">
+                                <img class="hover_image" src="assets/img/home_img/drawing_03b.jpg" alt="" style=""></a>
+                            </div>
+                          </div>
+                          <div class="separator  transparent   " style="margin-top: 3px; margin-bottom: 0px;"></div>
+                          <div class="wpb_text_column wpb_content_element ">
+                            <div class="wpb_wrapper">
+                              <h6 style="text-align: center;">古老的酒窖</h6></div>
+                          </div>
+                          <div class="separator  transparent   " style="margin-top: 7px; margin-bottom: 0px;"></div>
+                          <div class="wpb_text_column wpb_content_element ">
+                            <div class="wpb_wrapper">
+                              <p style="text-align: center;">Ancient wine cellar</p></div>
+                          </div>
+                          <div class="separator  transparent   " style="margin-top: 55px; margin-bottom: 0px;"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wpb_column vc_column_container vc_col-sm-3">
+            <div class="wpb_wrapper">
+              <div class="vc_row wpb_row section vc_row-fluid vc_inner " style="text-align: center;">
+                <div class=" full_section_inner clearfix">
+                  <div class="element_from_fade element_from_fade_on">
+                    <div style="transition-delay: 1200ms; -webkit-animation-delay: 1200ms; animation-delay: 1200ms;">
+                      <div class="wpb_column vc_column_container vc_col-sm-12">
+                        <div class="wpb_wrapper">
+                          <div class="image_hover" style="" data-transition-delay="">
+                            <div class="images_holder">
+                              <a href="#" target="_self">
+                                <img class="active_image " src="assets/img/home_img/drawing_4.jpg" alt="" style="">
+                                <img class="hover_image" src="assets/img/home_img/drawing_4b.jpg" alt="" style=""></a>
+                            </div>
+                          </div>
+                          <div class="separator  transparent   " style="margin-top: 3px; margin-bottom: 0px;"></div>
+                          <div class="wpb_text_column wpb_content_element ">
+                            <div class="wpb_wrapper">
+                              <h6 style="text-align: center;">原质原装</h6></div>
+                          </div>
+                          <div class="separator  transparent   " style="margin-top: 7px; margin-bottom: 0px;"></div>
+                          <div class="wpb_text_column wpb_content_element ">
+                            <div class="wpb_wrapper">
+                              <p style="text-align: center;">Original quality Original</p></div>
+                          </div>
+                          <div class="separator  transparent   " style="margin-top: 55px; margin-bottom: 0px;"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-
-<div class="vc_row wpb_row section vc_row-fluid  grid_section"
-     style="background-color: #ffffff; text-align: left;">
-    <div class=" section_inner clearfix">
+    <!--/.品牌四大优势 END-->
+    <div class="vc_row wpb_row section vc_row-fluid  grid_section" style="background-color: #ffffff; padding-top: 0px; padding-bottom: 14px; text-align: left;">
+      <div class=" section_inner clearfix">
         <div class="section_inner_margin clearfix">
-            <div class="wpb_column vc_column_container vc_col-sm-3">
-                <div class="wpb_wrapper">
-                    <div class="vc_row wpb_row section vc_row-fluid vc_inner "
-                         style="text-align: center;">
-                        <div class=" full_section_inner clearfix">
-                            <div class="element_from_fade element_from_fade_on">
-                                <div
-                                        style="transition-delay: 300ms; -webkit-animation-delay: 300ms; animation-delay: 300ms;">
-                                    <div class="wpb_column vc_column_container vc_col-sm-12">
-                                        <div class="wpb_wrapper">
-                                            <div class="image_hover" style="" data-transition-delay="">
-                                                <div class="images_holder">
-                                                    <a href="#" target="_self">
-                                                        <img class="active_image "
-                                                         src="assets/img/home_img/drawing_01.jpg"
-                                                         alt="" style="">
-                                                        <img class="hover_image"
-                                                         src="assets/img/home_img/drawing_01b.jpg"
-                                                         alt="" style=""></a>
-                                                </div>
-                                            </div>
-                                            <div class="separator  transparent   "
-                                                 style="margin-top: 3px; margin-bottom: 0px;"></div>
-
-                                            <div class="wpb_text_column wpb_content_element ">
-                                                <div class="wpb_wrapper">
-                                                    <h6 style="text-align: center;">优质葡萄</h6>
-
-                                                </div>
-                                            </div>
-                                            <div class="separator  transparent   "
-                                                 style="margin-top: 7px; margin-bottom: 0px;"></div>
-
-                                            <div class="wpb_text_column wpb_content_element ">
-                                                <div class="wpb_wrapper">
-                                                    <p style="text-align: center;">Quality grapes</p>
-
-                                                </div>
-                                            </div>
-                                            <div class="separator  transparent   "
-                                                 style="margin-top: 55px; margin-bottom: 0px;"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+          <div class="wpb_column vc_column_container vc_col-sm-12">
+            <div class="wpb_wrapper">
+              <div class="separator  normal   " style="margin-top: 20px; margin-bottom: 20px; background-color: #e0e0e0; height: 1px;"></div>	  
+			    <div class="vc_row wpb_row section vc_row-fluid vc_inner " style="text-align: left;">
+                <div class=" full_section_inner clearfix">
+                  <div class="wpb_column vc_column_container vc_col-sm-3">
+                    <div class="wpb_wrapper">
+                      <div class="wpb_single_image wpb_content_element vc_align_left">
+                        <div class="wpb_wrapper">
+                          <div class="vc_single_image-wrapper   vc_box_border_grey">
+                            <img width="500" height="304" src="assets/img/home_img/boerduo.jpg" class="vc_single_image-img attachment-full" alt="p1" srcset="assets/img/home_img/boerduo.jpg 300w, assets/img/home_img/boerduo.jpg 500w" sizes="(max-width: 500px) 100vw, 500px"></div>
                         </div>
+                      </div>
                     </div>
+                  </div>
+                  <div class="wpb_column vc_column_container vc_col-sm-9">
+                    <div class="wpb_wrapper">
+                      <div class="wpb_text_column wpb_content_element ">
+                        <div class="wpb_wrapper">
+                          <h3>
+                            <b>波尔多产区</b>
+                          </h3>
+                          <p>波尔多产区的柔顺，勃艮第产区的浑厚，香槟产区的芬芳……上帝如此眷顾高卢人，给予他们最适合种植葡萄的土地与气候。细数不同的产区，就如同探寻风格迥异的人的特质。精髓与道地都需要慢慢体味。提起法国的葡萄酒，人们往往不约而同地想到波尔多。中世纪的古堡、瑰丽的葡萄园、种植在葡萄园四周的玫瑰，美丽的景象构成了波尔多静谧的田园风光。波尔多产区是全世界优质葡萄酒的最大产区，种植面积达10万公顷，年产8亿瓶的葡萄酒，其中AOC级的葡萄酒达到了总产量的95%。
+						  当波尔多葡萄酒缓缓刺激味蕾时，往往就激起了品赏者的好奇心。让人不由自主地想去探究这酒背后所隐藏的来自大自然和酿酒师的融合功力。
+						  </p></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-            </div>
-            <div class="wpb_column vc_column_container vc_col-sm-3">
-                <div class="wpb_wrapper">
-                    <div class="vc_row wpb_row section vc_row-fluid vc_inner "
-                         style="text-align: center;">
-                        <div class=" full_section_inner clearfix">
-                            <div class="element_from_fade element_from_fade_on">
-                                <div
-                                        style="transition-delay: 600ms; -webkit-animation-delay: 600ms; animation-delay: 600ms;">
-                                    <div class="wpb_column vc_column_container vc_col-sm-12">
-                                        <div class="wpb_wrapper">
-                                            <div class="image_hover" style="" data-transition-delay="">
-                                                <div class="images_holder">
-                                                    <a href="#" target="_self">
-                                                        <img class="active_image "
-                                                            src="assets/img/home_img/drawing_02.jpg"
-                                                            alt="" style="">
-                                                        <img class="hover_image"
-                                                             src="assets/img/home_img/drawing_02b.jpg"
-                                                             alt="" style=""></a>
-                                                </div>
-                                            </div>
-                                            <div class="separator  transparent   "
-                                                 style="margin-top: 3px; margin-bottom: 0px;"></div>
-
-                                            <div class="wpb_text_column wpb_content_element ">
-                                                <div class="wpb_wrapper">
-                                                    <h6 style="text-align: center;">历史的传承</h6>
-
-                                                </div>
-                                            </div>
-                                            <div class="separator  transparent   "
-                                                 style="margin-top: 7px; margin-bottom: 0px;"></div>
-
-                                            <div class="wpb_text_column wpb_content_element ">
-                                                <div class="wpb_wrapper">
-                                                    <p style="text-align: center;">Historical heritage</p>
-
-                                                </div>
-                                            </div>
-                                            <div class="separator  transparent   "
-                                                 style="margin-top: 55px; margin-bottom: 0px;"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+              </div>  
+              <div class="separator  normal   " style="margin-top: 20px; margin-bottom: 20px; background-color: #e0e0e0; height: 1px;"></div>
+			   <div class="vc_row wpb_row section vc_row-fluid vc_inner " style="text-align: left;">
+                <div class=" full_section_inner clearfix">
+                  <div class="wpb_column vc_column_container vc_col-sm-3" style="margin-top:10px;">
+                    <div class="wpb_wrapper">
+                      <div class="wpb_single_image wpb_content_element vc_align_left">
+                        <div class="wpb_wrapper">
+                          <div class="vc_single_image-wrapper   vc_box_border_grey">
+                            <img width="500" height="304" src="assets/img/home_img/baolongdi.jpg" class="vc_single_image-img attachment-full" alt="16" srcset="assets/img/home_img/baolongdi.jpg 300w, assets/img/home_img/baolongdi.jpg 500w" sizes="(max-width: 500px) 100vw, 500px"></div>
                         </div>
+                      </div>
                     </div>
-                </div>
-            </div>
-            <div class="wpb_column vc_column_container vc_col-sm-3">
-                <div class="wpb_wrapper">
-                    <div class="vc_row wpb_row section vc_row-fluid vc_inner "
-                         style="text-align: center;">
-                        <div class=" full_section_inner clearfix">
-                            <div class="element_from_fade element_from_fade_on">
-                                <div
-                                        style="transition-delay: 900ms; -webkit-animation-delay: 900ms; animation-delay: 900ms;">
-                                    <div class="wpb_column vc_column_container vc_col-sm-12">
-                                        <div class="wpb_wrapper">
-                                            <div class="image_hover" style="" data-transition-delay="">
-                                                <div class="images_holder">
-                                                    <a href="#" target="_self">
-                                                        <img class="active_image "
-                                                            src="assets/img/home_img/drawing_03.jpg"
-                                                            alt="" style="">
-                                                        <img class="hover_image"
-                                                         src="assets/img/home_img/drawing_03b.jpg"
-                                                         alt="" style=""></a>
-                                                </div>
-                                            </div>
-                                            <div class="separator  transparent   "
-                                                 style="margin-top: 3px; margin-bottom: 0px;"></div>
-
-                                            <div class="wpb_text_column wpb_content_element ">
-                                                <div class="wpb_wrapper">
-                                                    <h6 style="text-align: center;">古老的酒窖</h6>
-
-                                                </div>
-                                            </div>
-                                            <div class="separator  transparent   "
-                                                 style="margin-top: 7px; margin-bottom: 0px;"></div>
-
-                                            <div class="wpb_text_column wpb_content_element ">
-                                                <div class="wpb_wrapper">
-                                                    <p style="text-align: center;">Ancient wine cellar</p>
-
-                                                </div>
-                                            </div>
-                                            <div class="separator  transparent   "
-                                                 style="margin-top: 55px; margin-bottom: 0px;"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                  </div>
+                  <div class="wpb_column vc_column_container vc_col-sm-9">
+                    <div class="wpb_wrapper">
+                      <div class="wpb_text_column wpb_content_element ">
+                        <div class="wpb_wrapper" style="margin-top: 0px" ;>
+                          <h3>
+                            <b>宝隆帝酒庄&nbsp;</b>
+                          </h3>
+                          <p>宝隆帝酒庄（Chateau Plantey）是法国波尔多波雅克（Pauillac）产区的酒庄之一，在中级酒庄联盟（L'Alliance des Crus Bourgeois）2012年发布的中级酒庄（Cru Bourgeois）名单中榜上有名。普朗蒂酒庄的现任庄主为克劳德•墨菲（Claude Meffre）
+						  　宝隆帝酒庄目前的葡萄园面积为27公顷，其中有55%的土地用来栽培梅洛（Merlot）葡萄，还有45%的土地用来栽培赤霞珠（Cabernet Sauvignon）葡萄，所有这些葡萄树的平均树龄为30年，种植密度为6,666株每公顷，用来栽培这些葡萄树的土壤为砾石。采摘后的葡萄经过筛选、破皮后，会通过传统方式进行发酵。发酵得来的葡萄酒
+							之后会再熟成12个月，最后在酒庄内装瓶。宝隆帝酒庄干红葡萄酒（Chateau Plantey, Pauillac, France）是宝隆帝酒庄的正牌干红葡萄酒，目前的年平均产量为81,000瓶。以2010年份的此款葡萄酒为例，该酒呈红宝石色，散发着清爽怡人的酒香，其中混合着多种水果的芳香，以及橡木桶赋予此酒的香料气息。
+						 </p>
                         </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
-            <div class="wpb_column vc_column_container vc_col-sm-3">
-                <div class="wpb_wrapper">
-                    <div class="vc_row wpb_row section vc_row-fluid vc_inner "
-                         style="text-align: center;">
-                        <div class=" full_section_inner clearfix">
-                            <div class="element_from_fade element_from_fade_on">
-                                <div
-                                        style="transition-delay: 1200ms; -webkit-animation-delay: 1200ms; animation-delay: 1200ms;">
-                                    <div class="wpb_column vc_column_container vc_col-sm-12">
-                                        <div class="wpb_wrapper">
-                                            <div class="image_hover" style="" data-transition-delay="">
-                                                <div class="images_holder">
-                                                    <a href="#" target="_self"><img class="active_image "
-                                                                                    src="assets/img/home_img/drawing_4.jpg"
-                                                                                    alt="" style=""><img class="hover_image"
-                                                                                                         src="assets/img/home_img/drawing_4b.jpg"
-                                                                                                         alt="" style=""></a>
-                                                </div>
-                                            </div>
-                                            <div class="separator  transparent   "
-                                                 style="margin-top: 3px; margin-bottom: 0px;"></div>
-
-                                            <div class="wpb_text_column wpb_content_element ">
-                                                <div class="wpb_wrapper">
-                                                    <h6 style="text-align: center;">原质原装</h6>
-
-                                                </div>
-                                            </div>
-                                            <div class="separator  transparent   "
-                                                 style="margin-top: 7px; margin-bottom: 0px;"></div>
-
-                                            <div class="wpb_text_column wpb_content_element ">
-                                                <div class="wpb_wrapper">
-                                                    <p style="text-align: center;">Original quality
-                                                        Original</p>
-
-                                                </div>
-                                            </div>
-                                            <div class="separator  transparent   "
-                                                 style="margin-top: 55px; margin-bottom: 0px;"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<!--/.品牌四大优势 END-->
-<div class="vc_row wpb_row section vc_row-fluid  grid_section"
-     style="background-color: #ffffff; padding-top: 0px; padding-bottom: 14px; text-align: left;">
-    <div class=" section_inner clearfix">
+    <div class="vc_row wpb_row section vc_row-fluid  grid_section" style="background-color: #ffffff; padding-top: 0px; padding-bottom: 14px; text-align: left;">
+      <div class=" section_inner clearfix">
         <div class="section_inner_margin clearfix">
-            <div class="wpb_column vc_column_container vc_col-sm-12">
-                <div class="wpb_wrapper">
-                    <div class="separator  normal   "
-                         style="margin-top: 20px; margin-bottom: 20px; background-color: #e0e0e0; height: 1px;"></div>
-                    <div class="vc_row wpb_row section vc_row-fluid vc_inner "
-                         style="text-align: left;">
-                        <div class=" full_section_inner clearfix">
-                            <div class="wpb_column vc_column_container vc_col-sm-3" style="margin-top:10px;">
-                                <div class="wpb_wrapper">
-                                    <div
-                                            class="wpb_single_image wpb_content_element vc_align_left">
-                                        <div class="wpb_wrapper">
-
-                                            <div class="vc_single_image-wrapper   vc_box_border_grey">
-                                                <img width="500" height="304"
-                                                     src="assets/img/home_img/16.png"
-                                                     class="vc_single_image-img attachment-full" alt="16"
-                                                     srcset="assets/img/home_img/16-300x182.png 300w, assets/img/home_img/16.png 500w"
-                                                     sizes="(max-width: 500px) 100vw, 500px">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="wpb_column vc_column_container vc_col-sm-9">
-                                <div class="wpb_wrapper">
-                                    <div class="wpb_text_column wpb_content_element ">
-                                        <div class="wpb_wrapper" style="margin-top: 0px";>
-                                            <h3>
-                                                <b>里奥哈简介&nbsp;</b>
-                                            </h3>
-                                            <p>
-                                                Rioja是西班牙最著名的葡萄酒产区之一，属西班牙葡萄酒最高法定产区（DoCa）。其酿酒历史可以追溯到两千多年前。远古已经开始从事葡萄园的种植和葡萄酒酿造的里奥哈，在中世纪前期的修道院保护下，葡萄酒文化得以持续发展。十九世纪中期，波多尔许多葡萄树受根瘤蚜虫的侵蚀而枯死，大量波多尔酿酒师因此涌入Rioja，Rioja葡萄酒从此声名远扬。
-                                            </p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+          <div class="wpb_column vc_column_container vc_col-sm-12">
+            <div class="wpb_wrapper">
+              <div class="separator  normal   " style="margin-top: 20px; margin-bottom: 20px; background-color: #e0e0e0; height: 1px;"></div>
+              <div class="vc_row wpb_row section vc_row-fluid vc_inner " style="text-align: left;">
+                <div class=" full_section_inner clearfix">
+                  <div class="wpb_column vc_column_container vc_col-sm-3" style="margin-top:10px;">
+                    <div class="wpb_wrapper">
+                      <div class="wpb_single_image wpb_content_element vc_align_left">
+                        <div class="wpb_wrapper">
+                          <div class="vc_single_image-wrapper   vc_box_border_grey">
+                            <img width="500" height="304" src="assets/img/home_img/dabujiao.jpg" class="vc_single_image-img attachment-full" alt="1" srcset="assets/img/home_img/dabujiao.jpg 300w, assets/img/home_img/dabujiao.jpg 500w" sizes="(max-width: 500px) 100vw, 500px"></div>
                         </div>
+                      </div>
                     </div>
-                    <div class="separator  normal   " style="margin-top: 20px; margin-bottom: 20px; background-color: #e0e0e0; height: 1px;"></div>
-                    <div class="vc_row wpb_row section vc_row-fluid vc_inner "
-                         style="text-align: left;">
-                        <div class=" full_section_inner clearfix">
-                            <div class="wpb_column vc_column_container vc_col-sm-3">
-                                <div class="wpb_wrapper">
-                                    <div
-                                            class="wpb_single_image wpb_content_element vc_align_left">
-                                        <div class="wpb_wrapper">
-
-                                            <div class="vc_single_image-wrapper   vc_box_border_grey">
-                                                <img width="500" height="304"
-                                                     src="assets/img/home_img/p1.jpg"
-                                                     class="vc_single_image-img attachment-full" alt="p1"
-                                                     srcset="assets/img/home_img/p1-300x182.jpg 300w, assets/img/home_img/p1.jpg 500w"
-                                                     sizes="(max-width: 500px) 100vw, 500px">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="wpb_column vc_column_container vc_col-sm-9">
-                                <div class="wpb_wrapper">
-                                    <div class="wpb_text_column wpb_content_element ">
-                                        <div class="wpb_wrapper">
-                                            <h3>
-                                                <b>Alta Pavina酒庄</b>
-                                            </h3>
-                                            <p>
-                                                卡斯蒂利亚-莱昂，沉淀着西班牙千年璀璨的葡萄酒文化，魅力香醇，让人流连沉醉。这里日照充足，风景秀丽，受到夏季长时间高温和冬季严寒的影响，葡萄味美质优。由于土地贫瘠，葡萄根必须深深扎入土层，吸收矿物质养分，这也为斯蒂利亚-莱昂的葡萄较其他地方增添多几分神秘的色彩。<br>
-                                                Alta
-                                                Pavina坐落在杜埃罗河上游南岸，这里得天独厚的环境造就了葡萄藤坚韧的本性，使其葡萄在成熟时保有足够的酸度，酿制出的酒有良好的成熟度和雄壮的结构感。
-
-                                            </p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                  </div>
+                  <div class="wpb_column vc_column_container vc_col-sm-9">
+                    <div class="wpb_wrapper">
+                      <div class="wpb_text_column wpb_content_element ">
+                        <div class="wpb_wrapper">
+                          <h3>
+                            <b>大布娇酒庄</b>
+                          </h3>
+                          <p>大布娇酒庄（Chateau Gressier Grand Poujeaux）曾经是法国波尔多（Moulis）慕里斯产区的酒庄之一，用其命名的葡萄酒在中级酒庄联盟（L'Alliance des Crus Bourgeois）2012年发布的中级酒庄（Cru Bourgeois）葡萄酒名单中榜上有名。</p>
+                          <p>酒庄的葡萄园面积为10公顷，其中有50%的土地用来栽培赤霞珠（Cabernet Sauvignon），还有50%的土地用来栽培梅洛（Merlot）葡萄，园内葡萄树的平均树龄为35年。发酵得来的葡萄酒之后会在20%新的法国橡木桶中熟成12个月，最后在酒庄内装瓶，年产量为60,000瓶</p>
+						  <p>值得一提的是，大布娇酒庄干红葡萄酒与忘忧堡酒庄其他的葡萄酒共享同一个优秀的酿酒技术团队，所以格希宝捷酒庄酿制的葡萄酒能够以醇厚、甘美和果香丰富的特点赢得市场好评。</p>
                         </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-
-<div class="vc_row wpb_row section vc_row-fluid  grid_section"
-     style="background-color: #ffffff; padding-top: 0px; padding-bottom: 14px; text-align: left;">
-    <div class=" section_inner clearfix">
+    <div class="vc_row wpb_row section vc_row-fluid  grid_section" style="background-color: #ffffff; padding-top: 0px; padding-bottom: 14px; text-align: left;">
+      <div class=" section_inner clearfix">
         <div class="section_inner_margin clearfix">
-            <div class="wpb_column vc_column_container vc_col-sm-12">
-                <div class="wpb_wrapper">
-                    <div class="separator  normal   "
-                         style="margin-top: 20px; margin-bottom: 20px; background-color: #e0e0e0; height: 1px;"></div>
-                    <div class="vc_row wpb_row section vc_row-fluid vc_inner "
-                         style="text-align: left;">
-                        <div class=" full_section_inner clearfix">
-                            <div class="wpb_column vc_column_container vc_col-sm-3" style="margin-top:10px;">
-                                <div class="wpb_wrapper">
-                                    <div
-                                            class="wpb_single_image wpb_content_element vc_align_left">
-                                        <div class="wpb_wrapper">
-
-                                            <div class="vc_single_image-wrapper   vc_box_border_grey">
-                                                <img width="500" height="304"
-                                                     src="assets/img/home_img/1-1.jpg"
-                                                     class="vc_single_image-img attachment-full" alt="1"
-                                                     srcset="assets/img/home_img/1-1-300x182.jpg 300w, assets/img/home_img/1-1.jpg 500w"
-                                                     sizes="(max-width: 500px) 100vw, 500px">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="wpb_column vc_column_container vc_col-sm-9">
-                                <div class="wpb_wrapper">
-                                    <div class="wpb_text_column wpb_content_element ">
-                                        <div class="wpb_wrapper">
-                                            <h3>
-                                                <b>David&nbsp;Moreno</b><b>戴维</b><b>·</b><b>莫雷诺酒庄</b>
-                                            </h3>
-                                            <p>
-                                                David
-                                                Moreno酒庄位于西班牙北部中心里奥哈(Rioja)产区。David
-                                                Moreno的酿酒传统要追溯到1912年，庞西亚诺莫雷诺建了第一个生产能力为18000升的酒窖。1963年，莫雷诺一家从农场搬到了巴塞罗那，去追寻一种更高质量的生活。
-                                            </p>
-                                            <p>
-                                                1981年底，David&nbsp;Moreno戴维莫雷诺决定放弃他作为工程师的工作，重返农场开展酿酒生涯，把他的祖父和父亲传授给他的酿酒秘方和知识发扬光大，实现他成为一个出色酿酒师的梦想。现在，酒庄由戴维莫雷诺和他的女儿杰玛和保拉精心管理和经营。
-                                            </p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+          <div class="wpb_column vc_column_container vc_col-sm-12">
+            <div class="wpb_wrapper">
+              <div class="separator  normal   " style="margin-top: 20px; margin-bottom: 20px; background-color: #e0e0e0; height: 1px;"></div>
+              <div class="vc_row wpb_row section vc_row-fluid vc_inner " style="text-align: left;">
+                <div class=" full_section_inner clearfix">
+                  <div class="wpb_column vc_column_container vc_col-sm-3" style="margin-top:15px;">
+                    <div class="wpb_wrapper">
+                      <div class="wpb_single_image wpb_content_element vc_align_left">
+                        <div class="wpb_wrapper">
+                          <div class="vc_single_image-wrapper   vc_box_border_grey">
+                            <img width="468" height="296" src="assets/img/home_img/dedahoujue.jpg" class="vc_single_image-img attachment-full" alt="p3" srcset="assets/img/home_img/dedahoujue.jpg 300w, assets/img/home_img/dedahoujue.jpg 468w" sizes="(max-width: 468px) 100vw, 468px"></div>
                         </div>
+                      </div>
                     </div>
+                  </div>
+                  <div class="wpb_column vc_column_container vc_col-sm-9">
+                    <div class="wpb_wrapper">
+                      <div class="wpb_text_column wpb_content_element ">
+                        <div class="wpb_wrapper">
+                          <h3>
+                            <b>德达侯爵庄园</b>
+                          </h3>
+                          <p>德达侯爵庄园（Chateau Marquis de Terme）位于波尔多（Bordeaux）左岸的玛歌（Margaux）产区，在1855梅多克（Medoc）列级庄评级中被评为四级庄。　德达侯爵庄园的葡萄园占地39公顷，其中最大的一块葡萄园面积达19.5公顷，土壤是典型的沙砾土，底层土为粘土。
+                         园内种植着60%的赤霞珠（Cabernet Sauvignon），35%的梅洛（Merlot）以及5%的味而多（Petit Verdot），葡萄种植密度为10,000株/公顷，葡萄藤的平均树龄为25年。这里的葡萄采摘全部采用手工操作，采摘完成后，将运往建于1981年的酒厂中进行去梗、压榨和发酵。在进入橡木桶中陈酿之前，会有专人对葡萄酒进行评估，挑选出适合酿制正牌葡萄酒的酒液。酒庄的正牌葡萄酒年产量约为12,000箱，副牌酒的产量约为2,500箱。该酒庄好年份的正牌酒复杂优雅，年轻时顺滑谐美，陈年之后格外雅致，完美地呈现了该酒庄葡萄园优秀的风土条件。</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-
-<div class="vc_row wpb_row section vc_row-fluid  grid_section"
-     style="background-color: #ffffff; padding-top: 0px; padding-bottom: 14px; text-align: left;">
-    <div class=" section_inner clearfix">
+    <div class="vc_row wpb_row section vc_row-fluid  grid_section" style="background-color: #ffffff; padding-top: 0px; padding-bottom: 14px; text-align: left;">
+      <div class=" section_inner clearfix">
         <div class="section_inner_margin clearfix">
-            <div class="wpb_column vc_column_container vc_col-sm-12">
-                <div class="wpb_wrapper">
-                    <div class="separator  normal   "
-                         style="margin-top: 20px; margin-bottom: 20px; background-color: #e0e0e0; height: 1px;"></div>
-                    <div class="vc_row wpb_row section vc_row-fluid vc_inner "
-                         style="text-align: left;">
-                        <div class=" full_section_inner clearfix">
-                            <div class="wpb_column vc_column_container vc_col-sm-3" style="margin-top:15px;">
-                                <div class="wpb_wrapper">
-                                    <div
-                                            class="wpb_single_image wpb_content_element vc_align_left">
-                                        <div class="wpb_wrapper">
-
-                                            <div class="vc_single_image-wrapper   vc_box_border_grey">
-                                                <img width="468" height="296"
-                                                     src="assets/img/home_img/p3.png"
-                                                     class="vc_single_image-img attachment-full" alt="p3"
-                                                     srcset="assets/img/home_img/p3-300x190.png 300w, assets/img/home_img/p3.png 468w"
-                                                     sizes="(max-width: 468px) 100vw, 468px">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="wpb_column vc_column_container vc_col-sm-9">
-                                <div class="wpb_wrapper">
-                                    <div class="wpb_text_column wpb_content_element ">
-                                        <div class="wpb_wrapper">
-                                            <h3>
-                                                <b>Lecea酒庄</b>
-                                            </h3>
-                                            <p>
-                                                Lecea酒庄坐落在西班牙葡萄酒最高法定产区（DoCa)里奥哈（Rioja）的心脏—–圣阿森西奥镇。圣阿森西奥镇海拔535米，被埃布罗河谷和纳赫里亚(Najerilla)山谷围绕，因其独特的地理优势，它被称为“葡萄酒的摇篮”，也被称为“波尔多圣阿森西奥”。
-                                            </p>
-                                            <p>
-                                                &nbsp;&nbsp;Lecea酒庄的历史可追溯到16世纪，距今已有500多年历史。16世以前，圣阿森西奥农民把酒藏在自然岩石洞穴中，随着时间的推移逐步对洞穴进行适当的改造与修补……
-                                            </p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+          <div class="wpb_column vc_column_container vc_col-sm-12">
+            <div class="wpb_wrapper">
+              <div class="separator  normal   " style="margin-top: 20px; margin-bottom: 20px; background-color: #e0e0e0; height: 1px;"></div>
+              <div class="vc_row wpb_row section vc_row-fluid vc_inner " style="text-align: left;">
+                <div class=" full_section_inner clearfix">
+                  <div class="wpb_column vc_column_container vc_col-sm-3" style="margin-top:25px;">
+                    <div class="wpb_wrapper">
+                      <div class="wpb_single_image wpb_content_element vc_align_left">
+                        <div class="wpb_wrapper">
+                          <div class="vc_single_image-wrapper   vc_box_border_grey">
+                            <img width="400" height="214" src="assets/img/home_img/langqinmusha.jpg" class="vc_single_image-img attachment-full" alt="44" srcset="assets/img/home_img/langqinmusha.jpg 300w, assets/img/home_img/langqinmusha.jpg 400w" sizes="(max-width: 400px) 100vw, 400px"></div>
                         </div>
+                      </div>
                     </div>
+                  </div>
+                  <div class="wpb_column vc_column_container vc_col-sm-9">
+                    <div class="wpb_wrapper">
+                      <div class="wpb_text_column wpb_content_element ">
+                        <div class="wpb_wrapper">
+                          <h3>
+                            <b>浪琴慕沙城堡</h3>
+                          <p>（Chateau Lynch-Moussas）位于法国波尔多（Bordeaux）波雅克（Pauillac）产区，是1855年列级酒庄五级庄之一。自18世纪起，浪琴慕沙城堡所在的土地一直由浪琴伯爵（Comte Lynch）掌管。后来，这块规模庞大的土地被一分为二，分别为浪琴慕沙城堡以及靓茨伯庄园（Chateau Lynch-Bages）。其中，浪琴慕沙城堡占据了大部分葡萄园。1855年，浪琴慕莎城堡在列级庄评级中被选为五级庄。
+                         如今，浪琴慕沙城堡共有60公顷葡萄园，其中70%的土地用来种植赤霞珠（Cabernet Sauvignon），其余30%的全部用来种植梅洛（Merlot）。葡萄藤的平均树龄为35年。葡萄园内的土壤主要为砂砾以及石灰石黏土，排水性和保温性俱佳，利于葡萄成熟。此外，葡萄园的种植密度为8,300株/公顷。
+						 酒庄的正牌酒为浪琴慕沙城堡红葡萄酒，其年产量约为220,000箱。自2001年起，浪琴慕沙酒庄也开始生产副牌红葡萄酒。浪琴慕沙城堡的葡萄酒素以深邃的色泽以及红色水果的香气闻名。其单宁圆润且成熟，带有波雅克产区典型的黑加仑风味，酒体较为饱满，余韵相当悠长。</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-
-<div class="vc_row wpb_row section vc_row-fluid  grid_section"
-     style="background-color: #ffffff; padding-top: 0px; padding-bottom: 14px; text-align: left;">
-    <div class=" section_inner clearfix">
+    <div class="vc_row wpb_row section vc_row-fluid  grid_section" style="background-color: #ffffff; padding-top: 0px; padding-bottom: 14px; text-align: left;">
+      <div class=" section_inner clearfix">
         <div class="section_inner_margin clearfix">
-            <div class="wpb_column vc_column_container vc_col-sm-12">
-                <div class="wpb_wrapper">
-                    <div class="separator  normal   "
-                         style="margin-top: 20px; margin-bottom: 20px; background-color: #e0e0e0; height: 1px;"></div>
-                    <div class="vc_row wpb_row section vc_row-fluid vc_inner "
-                         style="text-align: left;">
-                        <div class=" full_section_inner clearfix">
-                            <div class="wpb_column vc_column_container vc_col-sm-3"style="margin-top:25px;">
-                                <div class="wpb_wrapper">
-                                    <div
-                                            class="wpb_single_image wpb_content_element vc_align_left">
-                                        <div class="wpb_wrapper">
-
-                                            <div class="vc_single_image-wrapper   vc_box_border_grey">
-                                                <img width="400" height="214"
-                                                     src="assets/img/home_img/44.jpg"
-                                                     class="vc_single_image-img attachment-full" alt="44"
-                                                     srcset="assets/img/home_img/44-300x161.jpg 300w, assets/img/home_img/44.jpg 400w"
-                                                     sizes="(max-width: 400px) 100vw, 400px">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="wpb_column vc_column_container vc_col-sm-9">
-                                <div class="wpb_wrapper">
-                                    <div class="wpb_text_column wpb_content_element ">
-                                        <div class="wpb_wrapper">
-                                            <h3>
-                                                <b>Tritium</b><b>&nbsp;</b>酒庄
-                                            </h3>
-                                            <p>
-                                                Tritium在西班牙里奥哈（Rioja）产区的一个著名的酒乡小镇上，走在静谧的街道上，心里轻松而平静，没有丝毫浮躁。朴实古老的建筑、安详悠闲的人们，仿佛已穿越到几百年前。
-                                            </p>
-                                            <p>
-                                                Tritium古老酒窖，距今已超过600年。这把重量超过500g的钥匙，从不离身主人，无论去到哪里主人都将其随身携带，它已这样跟随陪伴了好几代人，见证了酒庄600年的故事。
-                                            </p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+          <div class="wpb_column vc_column_container vc_col-sm-12">
+            <div class="wpb_wrapper">
+              <div class="separator  normal   " style="margin-top: 20px; margin-bottom: 20px; background-color: #e0e0e0; height: 1px;"></div>
+              <div class="vc_row wpb_row section vc_row-fluid vc_inner " style="text-align: left;">
+                <div class=" full_section_inner clearfix">
+                  <div class="wpb_column vc_column_container vc_col-sm-3">
+                    <div class="wpb_wrapper">
+                      <div class="wpb_single_image wpb_content_element vc_align_left">
+                        <div class="wpb_wrapper">
+                          <div class="vc_single_image-wrapper   vc_box_border_grey">
+                            <img width="500" height="304" src="assets/img/home_img/jingtaiyang.jpg" class="vc_single_image-img attachment-full" alt="Valenciso" srcset="assets/img/home_img/jingtaiyang.jpg 300w, assets/img/home_img/jingtaiyang.jpg 500w" sizes="(max-width: 500px) 100vw, 500px"></div>
                         </div>
+                      </div>
                     </div>
+                  </div>
+                  <div class="wpb_column vc_column_container vc_col-sm-9">
+                    <div class="wpb_wrapper">
+                      <div class="wpb_text_column wpb_content_element ">
+                        <div class="wpb_wrapper">
+                          <h3>
+                            <b>靓太阳酒庄</b>
+                          </h3>
+                          <p>靓太阳酒庄（Chateau Beau Soleil）位于法国波尔多的波美侯（Pomerol）产区，该酒庄隶属于著名的柏图斯酒庄（Petrus）。Beau soleil是法国国王路易十四的别名，酒庄的名字彰显了其品味和身份。波美侯产区是波尔多面积最小的一个葡萄酒产区，出产品质上乘的葡萄酒。位于该产区的柏图斯酒庄一直被视为“酒王之王”，广为人知。离它不远的靓太阳酒庄虽然名气不如柏图斯，但是出品的葡萄酒的品质却足以与酒王之王相媲美。        
+						  靓太阳酒庄的葡萄酒入口匀称，在口中变化复杂，层次感强，口感非常甜美顺滑，如丝绒滑过，单宁在口中由弱到强再瞬间转弱，余味悠长，伴有巧克力及青橄榄回甘的味道。2007年，葡萄酒观察家（Wine Spectator）给予了靓太阳酒庄葡萄酒92分的高分好评。著名葡萄酒评论家罗伯特•帕克（Robert Parker）也在2001年和2005年分别给予了靓太阳酒庄葡萄酒89分和94分的评分。</p></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-
-<div class="vc_row wpb_row section vc_row-fluid  grid_section"
-     style="background-color: #ffffff; padding-top: 0px; padding-bottom: 14px; text-align: left;">
-    <div class=" section_inner clearfix">
+    <div class="vc_row wpb_row section vc_row-fluid  grid_section" style="background-color: #ffffff; padding-top: 0px; padding-bottom: 14px; text-align: left;">
+      <div class=" section_inner clearfix">
         <div class="section_inner_margin clearfix">
-            <div class="wpb_column vc_column_container vc_col-sm-12">
-                <div class="wpb_wrapper">
-                    <div class="separator  normal   "
-                         style="margin-top: 20px; margin-bottom: 20px; background-color: #e0e0e0; height: 1px;"></div>
-                    <div class="vc_row wpb_row section vc_row-fluid vc_inner "
-                         style="text-align: left;">
-                        <div class=" full_section_inner clearfix">
-                            <div class="wpb_column vc_column_container vc_col-sm-3">
-                                <div class="wpb_wrapper">
-                                    <div
-                                            class="wpb_single_image wpb_content_element vc_align_left">
-                                        <div class="wpb_wrapper">
-
-                                            <div class="vc_single_image-wrapper   vc_box_border_grey">
-                                                <img width="500" height="304"
-                                                     src="assets/img/home_img/Valenciso.jpg"
-                                                     class="vc_single_image-img attachment-full"
-                                                     alt="Valenciso"
-                                                     srcset="assets/img/home_img/Valenciso-300x182.jpg 300w, assets/img/home_img/Valenciso.jpg 500w"
-                                                     sizes="(max-width: 500px) 100vw, 500px">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="wpb_column vc_column_container vc_col-sm-9">
-                                <div class="wpb_wrapper">
-                                    <div class="wpb_text_column wpb_content_element ">
-                                        <div class="wpb_wrapper">
-                                            <h3>
-                                                <b>Valenciso酒庄</b>
-                                            </h3>
-                                            <p>
-                                                Valenciso酒庄位于上里奥哈北边，靠近Ollauri美丽的村庄，离Haro
-                                                4公里路程。酒庄大门设计成葡萄叶片脉络图案，由传统的材料和简单的线条勾勒出现代感，其创意灵感来自于一个雕塑家中篇小说，是阿方索的建筑作品Samaniego。<br>
-                                                Valenciso属于精品酒庄，他们只专注酿制一种葡萄酒，他们唯一的品牌：瓦伦西索。
-                                            </p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+          <div class="wpb_column vc_column_container vc_col-sm-12">
+            <div class="wpb_wrapper">
+              <div class="separator  normal   " style="margin-top: 20px; margin-bottom: 20px; background-color: #e0e0e0; height: 1px;"></div>
+              <div class="vc_row wpb_row section vc_row-fluid vc_inner " style="text-align: left;">
+                <div class=" full_section_inner clearfix">
+                  <div class="wpb_column vc_column_container vc_col-sm-3">
+                    <div class="wpb_wrapper">
+                      <div class="wpb_single_image wpb_content_element vc_align_left">
+                        <div class="wpb_wrapper">
+                          <div class="vc_single_image-wrapper   vc_box_border_grey">
+                            <img width="1000" height="608" src="assets/img/home_img/shengjiamei.jpg" class="vc_single_image-img attachment-full" alt="Vinos-Jeromin" srcset="assets/img/home_img/shengjiamei.jpg 300w, assets/img/home_img/shengjiamei.jpg 768w, assets/img/home_img/shengjiamei.jpg 1000w, assets/img/home_img/shengjiamei.jpg 700w" sizes="(max-width: 1000px) 100vw, 1000px"></div>
                         </div>
+                      </div>
                     </div>
+                  </div>
+                  <div class="wpb_column vc_column_container vc_col-sm-9">
+                    <div class="wpb_wrapper">
+                      <div class="wpb_text_column wpb_content_element ">
+                        <div class="wpb_wrapper">
+                          <h3>
+                            <b>圣伽美城堡</b>
+                          </h3>
+                          <p>圣伽美城堡（Chateau De Sainte Gemme）是法国波尔多（Bordeaux）上梅多克（Haut-Medoc）地区的中级酒庄之一，以其出产的果味浓郁、口感柔顺的波尔多红葡萄酒而著称，其历史最早可追溯至18世纪至19世纪之间。
+						  　　酒庄成立之时，梅多克正处在葡萄园的大规模扩张时期，庄主们经常会用某地的地名当做酒庄的名称，圣伽美城堡就是这样的一家酒庄——圣伽美是当地某教区的名字。酒庄法文原名中的“Gemme”是指“珍贵的石头”，用以告诉人们就是葡萄园独特的风土赋予了圣伽美葡萄酒不凡的品质。
+						  酒庄的葡萄园面积为8公顷，所栽培的葡萄品种包括赤霞珠（Cabernet Sauvignon）和梅洛（Merlot），这些葡萄树的树龄一般在20年左右。当葡萄达到理想的成熟水平后，酒庄会通过机器采收的方式将果实运到酿酒车间进行酿制。在酿酒过程中，酒庄会采用低温方式来保留葡萄酒中的新鲜果味，同时保证单宁柔顺圆润。之后，发酵好的葡萄酒会进入法国橡木桶中进行熟成，最后出落成一款清新奔放，果味浓郁，口感柔顺的干红葡萄酒
+						  </p>
+                        
+						</div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-
-<div class="vc_row wpb_row section vc_row-fluid  grid_section"
-     style="background-color: #ffffff; padding-top: 0px; padding-bottom: 14px; text-align: left;">
-    <div class=" section_inner clearfix">
+    <div class="vc_row wpb_row section vc_row-fluid  grid_section" style="background-color: #ffffff; padding-top: 0px; padding-bottom: 14px; text-align: left;">
+      <div class=" section_inner clearfix">
         <div class="section_inner_margin clearfix">
-            <div class="wpb_column vc_column_container vc_col-sm-12">
-                <div class="wpb_wrapper">
-                    <div class="separator  normal   "
-                         style="margin-top: 20px; margin-bottom: 20px; background-color: #e0e0e0; height: 1px;"></div>
-                    <div class="vc_row wpb_row section vc_row-fluid vc_inner "
-                         style="text-align: left;">
-                        <div class=" full_section_inner clearfix">
-                            <div class="wpb_column vc_column_container vc_col-sm-3">
-                                <div class="wpb_wrapper">
-                                    <div
-                                            class="wpb_single_image wpb_content_element vc_align_left">
-                                        <div class="wpb_wrapper">
-
-                                            <div class="vc_single_image-wrapper   vc_box_border_grey">
-                                                <img width="1000" height="608"
-                                                     src="assets/img/home_img/Vinos-Jeromin-1.jpg"
-                                                     class="vc_single_image-img attachment-full"
-                                                     alt="Vinos-Jeromin"
-                                                     srcset="assets/img/home_img/Vinos-Jeromin-1-300x182.jpg 300w, assets/img/home_img/Vinos-Jeromin-1-768x467.jpg 768w, assets/img/home_img/Vinos-Jeromin-1.jpg 1000w, assets/img/home_img/Vinos-Jeromin-1-700x426.jpg 700w"
-                                                     sizes="(max-width: 1000px) 100vw, 1000px">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="wpb_column vc_column_container vc_col-sm-9">
-                                <div class="wpb_wrapper">
-                                    <div class="wpb_text_column wpb_content_element ">
-                                        <div class="wpb_wrapper">
-                                            <h3>
-                                                <b>Vinos Jeromin酒庄</b>
-                                            </h3>
-                                            <p>
-                                                Vinos
-                                                Jeromin酒庄位于西班牙的马德里（Madrid）葡萄酒产区。该产区主要受大陆性气候的影响，夏季炎热，冬季寒冷。葡萄园中的土壤主要由棕灰土和花岗岩组成，呈酸性，有利于出产品质卓越的丹魄（Tempranillo）葡萄。园中主要种植的葡萄品种有丹魄、马家婆（Macabeo）和霞多丽（Chardonnay）等，其中部分老藤丹魄的树龄已达75年。
-                                            </p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+          <div class="wpb_column vc_column_container vc_col-sm-12">
+            <div class="wpb_wrapper">
+              <div class="separator  normal   " style="margin-top: 20px; margin-bottom: 20px; background-color: #e0e0e0; height: 1px;"></div>
+              <div class="vc_row wpb_row section vc_row-fluid vc_inner " style="text-align: left;">
+                <div class=" full_section_inner clearfix">
+                  <div class="wpb_column vc_column_container vc_col-sm-3">
+                    <div class="wpb_wrapper">
+                      <div class="wpb_single_image wpb_content_element vc_align_left">
+                        <div class="wpb_wrapper">
+                          <div class="vc_single_image-wrapper   vc_box_border_grey">
+                            <img width="500" height="304" src="assets/img/home_img/yishuzhiyuan.jpg" class="vc_single_image-img attachment-full" alt="Zuazo Gaston" srcset="assets/img/home_img/yishuzhiyuan.jpg 300w, assets/img/home_img/yishuzhiyuan.jpg 500w" sizes="(max-width: 500px) 100vw, 500px"></div>
                         </div>
+                      </div>
                     </div>
+                  </div>
+                  <div class="wpb_column vc_column_container vc_col-sm-9">
+                    <div class="wpb_wrapper">
+                      <div class="wpb_text_column wpb_content_element ">
+                        <div class="wpb_wrapper">
+                          <h3>
+                            <b>艺术之源酒庄</b>               
+                          </h3>
+                          <p>艺术之源酒庄（Chateau Larteau）位于法国的波尔多（Bordeaux）葡萄酒产区。艺术之源酒庄由来自利布尔纳（Libourne）的贝洛家族（Beylots  Family）创建于18世纪末。贝洛家族拥有酒庄将近2个世纪。酒庄几经沉浮，并在20 世纪到达了巅峰。2006年，出身于波尔多葡萄酒贸易世家的让•皮埃尔（Jean-Pierre Angliviel de la Beaumelle）从贝洛家族购买了酒庄。
+						  他对酒庄进行一系列的改革。首先他舍弃了18世纪的传统木桶酿制法，并在酿酒师弗朗索瓦•迪斯潘（François Despagne） 的协助下，把发酵室改造成了一间专攻酿酒技术的实验室。
+                           　　艺术之源酒庄葡萄园的土壤富含黏土和碎石，园区用水来自多尔多涅河。管理者精心管理葡萄园，采用传统的栽种方法，尊重土壤和环境，通过种植藤下作物和手工疏叶等方式，确保葡萄树的健康成长，并且减少药物制剂的使用。
+艺术之源酒庄的代表酒款为艺术之源干红葡萄酒，采用梅洛（Merlot）酿造而成。每一年，酒庄都在葡萄成熟时进行采摘，酿造出的葡萄酒口感优雅、结构复杂、单宁柔顺、酒体饱满。
+</p></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
+              <div class="separator  normal   " style="margin-top: 20px; margin-bottom: 20px; background-color: #e0e0e0; height: 1px;"></div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-
-<div class="vc_row wpb_row section vc_row-fluid  grid_section"
-     style="background-color: #ffffff; padding-top: 0px; padding-bottom: 14px; text-align: left;">
-    <div class=" section_inner clearfix">
-        <div class="section_inner_margin clearfix">
-            <div class="wpb_column vc_column_container vc_col-sm-12">
-                <div class="wpb_wrapper">
-                    <div class="separator  normal   "
-                         style="margin-top: 20px; margin-bottom: 20px; background-color: #e0e0e0; height: 1px;"></div>
-                    <div class="vc_row wpb_row section vc_row-fluid vc_inner "
-                         style="text-align: left;">
-                        <div class=" full_section_inner clearfix">
-                            <div class="wpb_column vc_column_container vc_col-sm-3">
-                                <div class="wpb_wrapper">
-                                    <div
-                                            class="wpb_single_image wpb_content_element vc_align_left">
-                                        <div class="wpb_wrapper">
-
-                                            <div class="vc_single_image-wrapper   vc_box_border_grey">
-                                                <img width="500" height="304"
-                                                     src="assets/img/home_img/Zuazo-Gaston.jpg"
-                                                     class="vc_single_image-img attachment-full"
-                                                     alt="Zuazo Gaston"
-                                                     srcset="assets/img/home_img/Zuazo-Gaston-300x182.jpg 300w, assets/img/home_img/Zuazo-Gaston.jpg 500w"
-                                                     sizes="(max-width: 500px) 100vw, 500px">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="wpb_column vc_column_container vc_col-sm-9">
-                                <div class="wpb_wrapper">
-                                    <div class="wpb_text_column wpb_content_element ">
-                                        <div class="wpb_wrapper">
-                                            <h3>
-                                                <b>Zuazo Gaston酒庄</b><b>&nbsp;</b>
-                                            </h3>
-                                            <p>
-                                                Zuazo Gaston（苏索-嘉士顿）酒庄位于里奥哈-阿拉维萨地区。
-                                                阿拉维萨地区，土壤贫瘠，以石灰黏土为主。土壤因素在当地特殊的地中海和大西洋混合性气候作用下，赋予了这个地区的葡萄酒令人难忘的特性。<br>
-                                                Zuazo Gaston酒庄以家族姓氏命名，拥有超过52公顷葡萄园。
-
-                                            </p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="separator  normal   " style="margin-top: 20px; margin-bottom: 20px; background-color: #e0e0e0; height: 1px;">
-                    </div>
-                </div>
-            </div>
-
-        </div>
+    <!--/.酒庄 END-->
+    <div class="wpb_text_column wpb_content_element " style="padding-top: 50px;">
+      <div class="wpb_wrapper">
+        <h2 style="text-align: center;">产品展示</h2></div>
     </div>
-</div>
-
-<!--/.酒庄 END-->
-
-
-<div class="wpb_text_column wpb_content_element " style="padding-top: 50px;">
-    <div class="wpb_wrapper">
-        <h2 style="text-align: center;">产品展示</h2>
-
-    </div>
-</div>
-
-<div class="separator  small center  "
-     style="margin-top: 21px; margin-bottom: 52px;">
-</div>
-
-<div class="preloader">
-    <div class="loading-center">
+    <div class="separator  small center  " style="margin-top: 21px; margin-bottom: 52px;"></div>
+    <div class="preloader">
+      <div class="loading-center">
         <div class="loading-center-absolute">
-            <div class="object object_one"></div>
-            <div class="object object_two"></div>
-            <div class="object object_three"></div>
+          <div class="object object_one"></div>
+          <div class="object object_two"></div>
+          <div class="object object_three"></div>
         </div>
+      </div>
     </div>
-</div>
-
-<div class="as-mainwrapper">
-    <div class="bg-white">
+    <div class="as-mainwrapper">
+      <div class="bg-white">
         <div class="arrival-area clearfix">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="section-tab">
-                            <div class="section-tab-menu text-center mb-45">
-                                <ul role="tablist">
-                                    <li role="presentation" class="active text-uppercase"><a href="#new" aria-controls="new" role="tab" data-toggle="tab">红葡萄酒</a></li>
-                                    <li role="presentation" class="text-uppercase"><a href="#featured" aria-controls="featured" role="tab" data-toggle="tab">白葡萄酒</a></li>
-                                    <li role="presentation" class="text-uppercase"><a href="#best" aria-controls="best" role="tab" data-toggle="tab">包装盒</a></li>
-                                </ul>
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="tab-content row mb-50">
-                                <div id="new" role="tabpanel" class="active section-tab-item">
-                                    <div class="tab-item-slider" id='redwine'>
-                                    </div>
-                                </div>
-                                <div id="featured" role="tabpanel" class="section-tab-item">
-                                    <div class="tab-item-slider" id="whitewine">
-                                    </div>
-                                </div>
-                                <div id="best" role="tabpanel" class="section-tab-item">
-                                    <div class="tab-item-slider" id="package">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="section-tab">
+                  <div class="section-tab-menu text-center mb-45">
+                    <ul role="tablist">
+                      <li role="presentation" class="active text-uppercase">
+                        <a href="#new" aria-controls="new" role="tab" data-toggle="tab">红葡萄酒</a></li>
+                      <li role="presentation" class="text-uppercase">
+                        <a href="#featured" aria-controls="featured" role="tab" data-toggle="tab">白葡萄酒</a></li>
+                      <li role="presentation" class="text-uppercase">
+                        <a href="#best" aria-controls="best" role="tab" data-toggle="tab">包装盒</a></li>
+                    </ul>
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="tab-content row mb-50">
+                    <div id="new" role="tabpanel" class="active section-tab-item">
+                      <div class="tab-item-slider" id='redwine'></div>
                     </div>
+                    <div id="featured" role="tabpanel" class="section-tab-item">
+                      <div class="tab-item-slider" id="whitewine"></div>
+                    </div>
+                    <div id="best" role="tabpanel" class="section-tab-item">
+                      <div class="tab-item-slider" id="package"></div>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-
-<div id="quickview-wrapper">
-    <!-- Modal -->
-    <!-- END Modal -->
-</div>
-
-<footer >
-    <div class="footer_inner clearfix">
+    <div id="quickview-wrapper">
+      <!-- Modal -->
+      <!-- END Modal --></div>
+    <footer>
+      <div class="footer_inner clearfix">
         <div class="footer_top_holder">
-            <div class="footer_top">
-                <div class="container">
-                    <div class="container_inner">
-                        <div id="text-36" class="widget widget_text">			<div class="textwidget"><div      class="vc_row wpb_row section vc_row-fluid " style=' text-align:left;'>
-                            <div class=" full_section_inner clearfix">
-                                <div class="wpb_column vc_column_container vc_col-sm-4">
-                                    <div class="wpb_wrapper">
-                                        <div class="vc_empty_space"  style="height: 30px" ><span
-                                                class="vc_empty_space_inner"><br />
-			<span class="empty_space_image"  ></span><br />
-		</span></div>
-                                        <div class="wpb_single_image wpb_content_element vc_align_center">
-                                            <div class="wpb_wrapper">
-                                                <div class="vc_single_image-wrapper   vc_box_border_grey"><img width="100px" height="100px" src="assets/img/弘葡国际.png" class="vc_single_image-img attachment-full" alt="logoggg" /></div>
-                                                </p></div>
-                                            </p></div>
-                                    </div>
-                                </div>
-                                <div class="wpb_column vc_column_container vc_col-sm-8">
-                                    <div class="wpb_wrapper">
-                                        <div class="vc_empty_space"  style="height: 30px" ><span
-                                                class="vc_empty_space_inner"><br />
-                                                <span class="empty_space_image"  ></span><br />
-		                                        </span>
-                                        </div>
-                                        <div class="wpb_text_column wpb_content_element ">
-                                            <div class="wpb_wrapper">
-                                                <p>深圳奥内瑞进出口贸易有限公司 深圳市前海深港合作区临海大道59号海运中心主塔楼1103-2号<br />
-                                                    电话：0755-26775662 邮箱：kendy@allawin.com<br />
-                                                    ©2016 Allawin.com  版权所有. 备案号：粤ICP备15106508号-1.</p>
-                                                </p></div>
-                                            </p></div>
-                                        </p></div>
-                                </div>
+          <div class="footer_top">
+            <div class="container">
+              <div class="container_inner">
+                <div id="text-36" class="widget widget_text">
+                  <div class="textwidget">
+                    <div class="vc_row wpb_row section vc_row-fluid " style=' text-align:left;'>
+                      <div class=" full_section_inner clearfix">
+                        <div class="wpb_column vc_column_container vc_col-sm-4">
+                          <div class="wpb_wrapper">
+                            <div class="vc_empty_space" style="height: 30px">
+                              <span class="vc_empty_space_inner">
+                                <br />
+                                <span class="empty_space_image"></span>
+                                <br /></span>
                             </div>
+                            <div class="wpb_single_image wpb_content_element vc_align_center">
+                              <div class="wpb_wrapper">
+                                <div class="vc_single_image-wrapper   vc_box_border_grey">
+                                  <img width="100px" height="100px" src="assets/img/弘葡国际.png" class="vc_single_image-img attachment-full" alt="logoggg" /></div>
+                                </p>
+                              </div>
+                              </p>
+                            </div>
+                          </div>
                         </div>
+                        <div class="wpb_column vc_column_container vc_col-sm-8">
+                          <div class="wpb_wrapper">
+                            <div class="vc_empty_space" style="height: 30px">
+                              <span class="vc_empty_space_inner">
+                                <br />
+                                <span class="empty_space_image"></span>
+                                <br /></span>
+                            </div>
+                            <div class="wpb_text_column wpb_content_element ">
+                              <div class="wpb_wrapper">
+                                <p>弘葡国际贸易（上海）有限公司 （Ronpou International Trade (Shanghai)CO.,LCD）位于中国（上海）自由贸易试验区华申路180号1幢719号<br />
+                                                        电话：13061699979 邮箱：ronpou@outlook.com<br />
+                                                        ©2017 shronpu.com  弘葡国际贸易(上海)有限公司 版权所有.</p>
+                                 </p></div>
+                              </div>
+                              </p>
+                            </div>
+                            </p>
+                          </div>
                         </div>
-                        </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</footer>
-<script>
-var productDatas = {
-redwine:[
-{id:"red_0",name:" 德达侯爵酒庄干红葡萄酒 (60%赤霞珠,30%美乐,10%小维度)",productlink:'assets/img/redwine/dedahoujue.jpg',productName:"德达侯爵酒庄干红葡萄酒",productPlace:"法国",yearDate:"2004",winePercent:"12.5%VOL",productArea:"玛歌",detailkinds:"60%赤霞珠,30%美乐,10%小维度",wineSaying:"美丽的颜色，深而结实的石榴色。复杂的黑樱桃，紫罗兰的花香和细微之处的芳香和矿物(石墨)和雪松的香气。尾韵是烘培，咖啡和香草味道。入口饱满，圆润，肉质柔滑，强而有力，单宁柔顺。"},
-{id:"red_1",name:" 靓太阳酒庄干红葡萄酒 (95%美乐,5%品丽珠)",productlink:'assets/img/redwine/beausoleil.jpg',productName:"靓太阳酒庄干红葡萄酒",productPlace:"法国",yearDate:"2011",winePercent:"13.5%VOL",productArea:"波美侯",detailkinds:"95%美乐,5%品丽珠",wineSaying:"入口均匀，在口中"},
-{id:"red_2",name:" 贝拉尔酒庄干红葡萄酒 (70%赤霞珠,25%美乐,5%品丽珠)",productlink:'assets/img/redwine/belair.jpg',productName:"贝拉尔酒庄干红葡萄酒",productPlace:"法国",yearDate:"2011",winePercent:"13.5%VOL",productArea:"上梅多克",detailkinds:"70%赤霞珠,25%美乐,5%品丽珠",wineSaying:"此款葡萄酒整体平衡度高，酒体强劲，入口果香浓郁，口感饱满，余韵悠长"},
-{id:"red_3",name:" 波斯卡酒庄干红葡萄酒 (100%美乐)",productlink:'assets/img/redwine/bocage.jpg',productName:"波斯卡酒庄干红葡萄酒",productPlace:"法国",yearDate:"2010",winePercent:"13.5%VOL",productArea:"波尔多",detailkinds:"100%美乐",wineSaying:"波卡斯酒庄超级波尔多红葡萄酒呈现出迷人深厚的红宝石色泽，相宜的水果及紫罗兰的味道在嗅觉中完美呈现。柔软丝滑的口感中平衡了来自黑醋栗和樱桃的水果味道。有动人的悠长回味"},
-{id:"red_4",name:" 大布娇酒庄干红葡萄酒 (50%赤霞珠,50%美乐)",productlink:'assets/img/redwine/gressier.jpg',productName:"大布娇酒庄干红葡萄酒",productPlace:"法国",yearDate:"2004",winePercent:"12.5%VOL",productArea:"玛歌",detailkinds:"60%赤霞珠,30%美乐,10%小维度",wineSaying:"美丽的颜色，深而结实的石榴色。复杂的黑樱桃，紫罗兰的花香和细微之处的芳香和矿物(石墨)和雪松的香气。尾韵是烘培，咖啡和香草味道。入口饱满，圆润，肉质柔滑，强而有力，单宁柔顺。"},
-{id:"red_5",name:" 艺术之源酒庄干红葡萄酒 (美乐 MERLOT)",productlink:'assets/img/redwine/larteau.jpg',productName:"艺术之源酒庄干红葡萄酒",productPlace:"法国",yearDate:"2004",winePercent:"12.5%VOL",productArea:"玛歌",detailkinds:"60%赤霞珠,30%美乐,10%小维度",wineSaying:"美丽的颜色，深而结实的石榴色。复杂的黑樱桃，紫罗兰的花香和细微之处的芳香和矿物(石墨)和雪松的香气。尾韵是烘培，咖啡和香草味道。入口饱满，圆润，肉质柔滑，强而有力，单宁柔顺。"},
-{id:"red_6",name:" 拉索斯酒庄干红葡萄酒 (45%赤霞珠,55%美乐)",productlink:'assets/img/redwine/lassus.jpg',productName:"拉索斯酒庄干红葡萄酒",productPlace:"法国",yearDate:"2004",winePercent:"12.5%VOL",productArea:"玛歌",detailkinds:"60%赤霞珠,30%美乐,10%小维度",wineSaying:"美丽的颜色，深而结实的石榴色。复杂的黑樱桃，紫罗兰的花香和细微之处的芳香和矿物(石墨)和雪松的香气。尾韵是烘培，咖啡和香草味道。入口饱满，圆润，肉质柔滑，强而有力，单宁柔顺。"},
-{id:"red_7",name:" 浪琴慕沙酒庄干红葡萄酒 (70%赤霞珠,30%美乐)",productlink:'assets/img/redwine/Lynch.jpg',productName:"浪琴慕沙酒庄干红葡萄酒",productPlace:"法国",yearDate:"2004",winePercent:"12.5%VOL",productArea:"玛歌",detailkinds:"60%赤霞珠,30%美乐,10%小维度",wineSaying:"美丽的颜色，深而结实的石榴色。复杂的黑樱桃，紫罗兰的花香和细微之处的芳香和矿物(石墨)和雪松的香气。尾韵是烘培，咖啡和香草味道。入口饱满，圆润，肉质柔滑，强而有力，单宁柔顺。"},
-{id:"red_8",name:" 美拉德酒庄干红葡萄酒 (10%赤霞珠,80%美乐,10%品丽珠)",productlink:'assets/img/redwine/maillard.jpg',productName:"美拉德酒庄干红葡萄酒",productPlace:"法国",yearDate:"2004",winePercent:"12.5%VOL",productArea:"玛歌",detailkinds:"60%赤霞珠,30%美乐,10%小维度",wineSaying:"美丽的颜色，深而结实的石榴色。复杂的黑樱桃，紫罗兰的花香和细微之处的芳香和矿物(石墨)和雪松的香气。尾韵是烘培，咖啡和香草味道。入口饱满，圆润，肉质柔滑，强而有力，单宁柔顺。"},
-{id:"red_9",name:" 玛格斯酒庄干红葡萄酒 (30%赤霞珠,50%美乐,20%品丽珠)",productlink:'assets/img/redwine/Marges.jpg',productName:"玛格斯酒庄干红葡萄酒",productPlace:"法国",yearDate:"2004",winePercent:"12.5%VOL",productArea:"玛歌",detailkinds:"60%赤霞珠,30%美乐,10%小维度",wineSaying:"美丽的颜色，深而结实的石榴色。复杂的黑樱桃，紫罗兰的花香和细微之处的芳香和矿物(石墨)和雪松的香气。尾韵是烘培，咖啡和香草味道。入口饱满，圆润，肉质柔滑，强而有力，单宁柔顺。"},
-{id:"red_10",name:" 宝隆帝酒庄干红葡萄酒 (50%赤霞珠,50%美乐)",productlink:'assets/img/redwine/plantey.jpg',productName:"宝隆帝酒庄干红葡萄酒",productPlace:"法国",yearDate:"2004",winePercent:"12.5%VOL",productArea:"玛歌",detailkinds:"60%赤霞珠,30%美乐,10%小维度",wineSaying:"美丽的颜色，深而结实的石榴色。复杂的黑樱桃，紫罗兰的花香和细微之处的芳香和矿物(石墨)和雪松的香气。尾韵是烘培，咖啡和香草味道。入口饱满，圆润，肉质柔滑，强而有力，单宁柔顺。"},
-{id:"red_11",name:" 圣伽美酒庄干红葡萄酒 (50%赤霞珠,50%美乐)",productlink:'assets/img/redwine/sainte.jpg',productName:"圣伽美酒庄干红葡萄酒",productPlace:"法国",yearDate:"2004",winePercent:"12.5%VOL",productArea:"玛歌",detailkinds:"60%赤霞珠,30%美乐,10%小维度",wineSaying:"美丽的颜色，深而结实的石榴色。复杂的黑樱桃，紫罗兰的花香和细微之处的芳香和矿物(石墨)和雪松的香气。尾韵是烘培，咖啡和香草味道。入口饱满，圆润，肉质柔滑，强而有力，单宁柔顺。"}
-],
-whitewine:[
-{id:"white_0",name:" 布蓝乔木贵腐酒 (12%长相思,83%赛美容,5%穆斯卡代)",productlink:'assets/img/whitewine/bulanqiaomu.jpg',productName:"布蓝乔木贵腐酒",productPlace:"法国",yearDate:"2004",winePercent:"12.5%VOL",productArea:"玛歌",detailkinds:"60%赤霞珠,30%美乐,10%小维度",wineSaying:"美丽的颜色，深而结实的石榴色。复杂的黑樱桃，紫罗兰的花香和细微之处的芳香和矿物(石墨)和雪松的香气。尾韵是烘培，咖啡和香草味道。入口饱满，圆润，肉质柔滑，强而有力，单宁柔顺。"},
-{id:"white_1",name:" 嘉梦丽丝贵腐酒 (7%长相思,90%赛美容,3%穆斯卡代)",productlink:'assets/img/whitewine/jiamenglisi.jpg',productName:"嘉梦丽丝贵腐酒",productPlace:"法国",yearDate:"2004",winePercent:"12.5%VOL",productArea:"玛歌",detailkinds:"60%赤霞珠,30%美乐,10%小维度",wineSaying:"美丽的颜色，深而结实的石榴色。复杂的黑樱桃，紫罗兰的花香和细微之处的芳香和矿物(石墨)和雪松的香气。尾韵是烘培，咖啡和香草味道。入口饱满，圆润，肉质柔滑，强而有力，单宁柔顺。"},
-{id:"white_2",name:" 玛诺白葡萄酒 (45%长相思,40%赛美容,15%穆斯卡代)",productlink:'assets/img/whitewine/magneau.jpg',productName:"玛诺白葡萄酒",productPlace:"法国",yearDate:"2004",winePercent:"12.5%VOL",productArea:"玛歌",detailkinds:"60%赤霞珠,30%美乐,10%小维度",wineSaying:"美丽的颜色，深而结实的石榴色。复杂的黑樱桃，紫罗兰的花香和细微之处的芳香和矿物(石墨)和雪松的香气。尾韵是烘培，咖啡和香草味道。入口饱满，圆润，肉质柔滑，强而有力，单宁柔顺。"}
-],
-package:[
-{id:"package_0",name:" 上夜丘 特制包装盒",productlink:'assets/img/package/上夜丘.jpg'},
-{id:"package_1",name:" 嘉梦丽思 ",productlink:'assets/img/package/嘉梦丽思.jpg'},
-{id:"package_2",name:" 圣伽美 ",productlink:'assets/img/package/圣伽美.jpg'},
-{id:"package_3",name:" 大布娇",productlink:'assets/img/package/大布娇.jpg'},
-{id:"package_4",name:" 宝隆帝 ",productlink:'assets/img/package/宝隆帝.jpg'},
-{id:"package_5",name:" 布兰乔木 ",productlink:'assets/img/package/布兰乔木.jpg'},
-{id:"package_6",name:" 布莱尼 ",productlink:'assets/img/package/布莱尼.jpg'},
-{id:"package_7",name:" 德达侯爵 ",productlink:'assets/img/package/德达侯爵.jpg'},
-{id:"package_8",name:" 拉索斯 ",productlink:'assets/img/package/拉索斯.jpg'},
-{id:"package_9",name:" 波卡斯 ",productlink:'assets/img/package/波卡斯.jpg'},
-{id:"package_10",name:" 浪琴慕沙 ",productlink:'assets/img/package/浪琴慕沙.jpg'},
-{id:"package_11",name:" 玛格斯 ",productlink:'assets/img/package/玛格斯.jpg'},
-{id:"package_12",name:" 玛诺 ",productlink:'assets/img/package/玛诺.jpg'},
-{id:"package_13",name:" 美拉德 ",productlink:'assets/img/package/美拉德.jpg'},
-{id:"package_14",name:" 艺术之源 ",productlink:'assets/img/package/艺术之源.jpg'},
-{id:"package_15",name:" 贝拉尔 ",productlink:'assets/img/package/贝拉尔.jpg'},
-{id:"package_16",name:" 靓太阳 ",productlink:'assets/img/package/靓太阳.jpg'}
-]
-};
+      </div>
+    </footer>
+    <script>
+    var productDatas = {
+        redwine: [{
+          id: "red_0",
+          name: " 德达侯爵酒庄干红葡萄酒 (60%赤霞珠,30%美乐,10%小维度)",
+          productlink: 'assets/img/redwine/dedahoujue.jpg',
+          productName: "德达侯爵酒庄干红葡萄酒",
+          productPlace: "法国",
+          yearDate: "2004",
+          winePercent: "12.5%VOL",
+          productArea: "玛歌",
+          detailkinds: "60%赤霞珠,30%美乐,10%小维度",
+          wineSaying: "美丽的颜色，深而结实的石榴色。复杂的黑樱桃，紫罗兰的花香和细微之处的芳香和矿物(石墨)和雪松的香气。尾韵是烘培，咖啡和香草味道。入口饱满，圆润，肉质柔滑，强而有力，单宁柔顺。"
+        },
+        {
+          id: "red_1",
+          name: " 靓太阳酒庄干红葡萄酒 (95%美乐,5%品丽珠)",
+          productlink: 'assets/img/redwine/beausoleil.jpg',
+          productName: "靓太阳酒庄干红葡萄酒",
+          productPlace: "法国",
+          yearDate: "2011",
+          winePercent: "13.5%VOL",
+          productArea: "波美侯",
+          detailkinds: "95%美乐,5%品丽珠",
+          wineSaying: "入口均匀，在口中变化反复,层次感强。味甜美,像丝绒滑过,单宁在口中由弱到强瞬间转弱,喉中厚味悠长,伴有巧克力香及青橄榄回甘之感觉。"
+        },
+        {
+          id: "red_2",
+          name: " 贝拉尔酒庄干红葡萄酒 (70%赤霞珠,25%美乐,5%品丽珠)",
+          productlink: 'assets/img/redwine/belair.jpg',
+          productName: "贝拉尔酒庄干红葡萄酒",
+          productPlace: "法国",
+          yearDate: "2011",
+          winePercent: "13.5%VOL",
+          productArea: "上梅多克",
+          detailkinds: "70%赤霞珠,25%美乐,5%品丽珠",
+          wineSaying: "此款葡萄酒整体平衡度高，酒体强劲，入口果香浓郁，口感饱满，余韵悠长。"
+        },
+        {
+          id: "red_3",
+          name: " 波斯卡酒庄干红葡萄酒 (100%美乐)",
+          productlink: 'assets/img/redwine/bocage.jpg',
+          productName: "波斯卡酒庄干红葡萄酒",
+          productPlace: "法国",
+          yearDate: "2010",
+          winePercent: "13.5%VOL",
+          productArea: "波尔多",
+          detailkinds: "100%美乐",
+          wineSaying: "波卡斯酒庄超级波尔多红葡萄酒呈现出迷人深厚的红宝石色泽，相宜的水果及紫罗兰的味道在嗅觉中完美呈现。柔软丝滑的口感中平衡了来自黑醋栗和樱桃的水果味道。有动人的悠长回味。"
+        },
+        {
+          id: "red_4",
+          name: " 大布娇酒庄干红葡萄酒 (50%赤霞珠,50%美乐)",
+          productlink: 'assets/img/redwine/gressier.jpg',
+          productName: "大布娇酒庄干红葡萄酒",
+          productPlace: "法国",
+          yearDate: "2012",
+          winePercent: "13%VOL",
+          productArea: "慕里斯",
+          detailkinds: "50%赤霞珠,50%美乐",
+          wineSaying: "口感醇厚,甘美,果香丰富。"
+        },
+        {
+          id: "red_5",
+          name: " 艺术之源酒庄干红葡萄酒 (美乐 MERLOT)",
+          productlink: 'assets/img/redwine/larteau.jpg',
+          productName: "艺术之源酒庄干红葡萄酒",
+          productPlace: "法国",
+          yearDate: "2009",
+          winePercent: "13.5%VOL",
+          productArea: "法国",
+          detailkinds: "美乐 MERLOT",
+          wineSaying: "香气丰富,红色水果,香草混和着矿物味,入口后,香气伴随着圆润的口感,酒体平衡。"
+        },
+        {
+          id: "red_6",
+          name: " 拉索斯酒庄干红葡萄酒 (45%赤霞珠,55%美乐)",
+          productlink: 'assets/img/redwine/lassus.jpg',
+          productName: "拉索斯酒庄干红葡萄酒",
+          productPlace: "法国",
+          yearDate: "2012",
+          winePercent: "13%VOL",
+          productArea: "梅多克",
+          detailkinds: "45%赤霞珠,55%美乐",
+          wineSaying: "深沉明亮的色泽,反射着淡淡紫色光泽,散发甜美的,黑果香气和糖渍柑橘的香气,并伴随着令人愉悦的橡木香气。口感丰富,带有强劲的成熟黑醋栗的香气并平衡的烘烤的香气。这款酒酒体平衡,单宁成熟柔和,余韵悠长。"
+        },
+        {
+          id: "red_7",
+          name: " 浪琴慕沙酒庄干红葡萄酒 (70%赤霞珠,30%美乐)",
+          productlink: 'assets/img/redwine/Lynch.jpg',
+          productName: "浪琴慕沙酒庄干红葡萄酒",
+          productPlace: "法国",
+          yearDate: "2007",
+          winePercent: "13%VOL",
+          productArea: "法国",
+          detailkinds: "70%赤霞珠,30%美乐",
+          wineSaying: "浪琴慕沙酒有着非常丰富的黑果香,并展现出明显的香草风味。就一款波亚克酒而言浪琴慕沙的葡萄酒有着相对较高的美乐比例，而对比起它的许多邻居，它总是显得更为柔和，柔滑且甘美一些。"
+        },
+        {
+          id: "red_8",
+          name: " 美拉德酒庄干红葡萄酒 (10%赤霞珠,80%美乐,10%品丽珠)",
+          productlink: 'assets/img/redwine/maillard.jpg',
+          productName: "美拉德酒庄干红葡萄酒",
+          productPlace: "法国",
+          yearDate: "2010",
+          winePercent: "12.5%VOL",
+          productArea: "格拉夫",
+          detailkinds: "10%赤霞珠,80%美乐,10%品丽珠",
+          wineSaying: "在视觉上呈现华美而明亮深邃的色泽;嗅觉上酒体带有成熟黑色水果的香气,并伴随着微妙而精致的皮革香气;味觉上口感美味,有油脂感,丰富的新鲜果味,精细的橡木味,单宁柔和,是一款有魅力的酒品。"
+        },
+        {
+          id: "red_9",
+          name: " 玛格斯酒庄干红葡萄酒 (30%赤霞珠,50%美乐,20%品丽珠)",
+          productlink: 'assets/img/redwine/Marges.jpg',
+          productName: "玛格斯酒庄干红葡萄酒",
+          productPlace: "法国",
+          yearDate: "2010",
+          winePercent: "13%VOL",
+          productArea: "格拉夫",
+          detailkinds: "30%赤霞珠,50%美乐,20%品丽珠",
+          wineSaying: "在视觉上呈现华美的石榴红颜色;嗅觉上酒体带有矿物香味,可闻到明显的桑葚果酱及樱桃果酱的甜味;味觉上口感美味,有油脂感,丰富的新鲜果味,收尾有爽脆感,是一款有魅力的酒品。"
+        },
+        {
+          id: "red_10",
+          name: " 宝隆帝酒庄干红葡萄酒 (50%赤霞珠,50%美乐)",
+          productlink: 'assets/img/redwine/plantey.jpg',
+          productName: "宝隆帝酒庄干红葡萄酒",
+          productPlace: "法国",
+          yearDate: "2012",
+          winePercent: "13%VOL",
+          productArea: "波亚克",
+          detailkinds: "50%赤霞珠,50%美乐",
+          wineSaying: "该酒呈红宝色，散发着清爽怡人的酒香，其中混合着多种水果的芳香，以及橡木桶赋予此酒的香料气息。"
+        },
+        {
+          id: "red_11",
+          name: " 圣伽美酒庄干红葡萄酒 (50%赤霞珠,50%美乐)",
+          productlink: 'assets/img/redwine/sainte.jpg',
+          productName: "圣伽美酒庄干红葡萄酒",
+          productPlace: "法国",
+          yearDate: "2011",
+          winePercent: "13%VOL",
+          productArea: "上梅多克",
+          detailkinds: "50%赤霞珠,50%美乐",
+          wineSaying: "该款酒果香浓郁，清新，带有糖渍水果的香气，口感丝滑细腻。果香，顺滑，愉悦罗伯特 帕克评分84/100。"
+        }],
+        whitewine: [{
+          id: "white_0",
+          name: " 布蓝乔木贵腐酒 (12%长相思,83%赛美容,5%穆斯卡代)",
+          productlink: 'assets/img/whitewine/bulanqiaomu.jpg',
+          productName: "布蓝乔木贵腐酒",
+          productPlace: "法国",
+          yearDate: "2006",
+          winePercent: "14%VOL",
+          productArea: "苏玳",
+          detailkinds: "12%长相思,83%赛美容,5%穆斯卡代",
+          wineSaying: "漂亮的金黄色,有着浓重丰满的风格,持续,细腻而温暖。闻起来常有蜂蜜,杏脯和桃子的果香,口感浓郁香甜,酸度平衡,可搭配甜点,鹅肝或重口味奶酪。"
+        },
+        {
+          id: "white_1",
+          name: " 嘉梦丽丝贵腐酒 (7%长相思,90%赛美容,3%穆斯卡代)",
+          productlink: 'assets/img/whitewine/jiamenglisi.jpg',
+          productName: "嘉梦丽丝贵腐酒",
+          productPlace: "法国",
+          yearDate: "2004",
+          winePercent: "14%VOL",
+          productArea: "苏玳",
+          detailkinds: "7%长相思,90%赛美容,3%穆斯卡代",
+          wineSaying: "有着亮丽的金黄色。充满异国情调的果香,有浓郁的芒果香气。入口感觉新鲜饱满。酒体平衡,迷人的水果味道,后味持久,带有柑桔味的余韵。可搭配甜点,鹅肝或重口味奶酪。"
+        },
+        {
+          id: "white_2",
+          name: " 玛诺白葡萄酒 (45%长相思,40%赛美容,15%穆斯卡代)",
+          productlink: 'assets/img/whitewine/magneau.jpg',
+          productName: "玛诺白葡萄酒",
+          productPlace: "法国",
+          yearDate: "2013",
+          winePercent: "12.5%VOL",
+          productArea: "格拉夫",
+          detailkinds: "45%长相思,40%赛美容,15%穆斯卡代",
+          wineSaying: "酒香浓郁,精致,口中有果香带来的无限享受;酒体圆润,活泼。"
+        }],
+        package: [{
+          id: "package_0",
+          name: " 上夜丘 特制包装盒",
+          productlink: 'assets/img/package/上夜丘.jpg'
+        },
+        {
+          id: "package_1",
+          name: " 嘉梦丽思 ",
+          productlink: 'assets/img/package/嘉梦丽思.jpg'
+        },
+        {
+          id: "package_2",
+          name: " 圣伽美 ",
+          productlink: 'assets/img/package/圣伽美.jpg'
+        },
+        {
+          id: "package_3",
+          name: " 大布娇",
+          productlink: 'assets/img/package/大布娇.jpg'
+        },
+        {
+          id: "package_4",
+          name: " 宝隆帝 ",
+          productlink: 'assets/img/package/宝隆帝.jpg'
+        },
+        {
+          id: "package_5",
+          name: " 布兰乔木 ",
+          productlink: 'assets/img/package/布兰乔木.jpg'
+        },
+        {
+          id: "package_6",
+          name: " 布莱尼 ",
+          productlink: 'assets/img/package/布莱尼.jpg'
+        },
+        {
+          id: "package_7",
+          name: " 德达侯爵 ",
+          productlink: 'assets/img/package/德达侯爵.jpg'
+        },
+        {
+          id: "package_8",
+          name: " 拉索斯 ",
+          productlink: 'assets/img/package/拉索斯.jpg'
+        },
+        {
+          id: "package_9",
+          name: " 波卡斯 ",
+          productlink: 'assets/img/package/波卡斯.jpg'
+        },
+        {
+          id: "package_10",
+          name: " 浪琴慕沙 ",
+          productlink: 'assets/img/package/浪琴慕沙.jpg'
+        },
+        {
+          id: "package_11",
+          name: " 玛格斯 ",
+          productlink: 'assets/img/package/玛格斯.jpg'
+        },
+        {
+          id: "package_12",
+          name: " 玛诺 ",
+          productlink: 'assets/img/package/玛诺.jpg'
+        },
+        {
+          id: "package_13",
+          name: " 美拉德 ",
+          productlink: 'assets/img/package/美拉德.jpg'
+        },
+        {
+          id: "package_14",
+          name: " 艺术之源 ",
+          productlink: 'assets/img/package/艺术之源.jpg'
+        },
+        {
+          id: "package_15",
+          name: " 贝拉尔 ",
+          productlink: 'assets/img/package/贝拉尔.jpg'
+        },
+        {
+          id: "package_16",
+          name: " 靓太阳 ",
+          productlink: 'assets/img/package/靓太阳.jpg'
+        }]
+      };
 
-var i = 0;
-var redHTML='';
-var whiteHTML='';
-var packageHTML='';
-var popBox = document.getElementById('quickview-wrapper');
+      var i = 0;
+      var redHTML = '';
+      var whiteHTML = '';
+      var packageHTML = '';
+      var popBox = document.getElementById('quickview-wrapper');
 
-for(var o in productDatas.redwine){
-redHTML +='<div class=\"col-xs-12 col-width\"><div class=\"single-product\"><div class=\"single-product-item\">'+
-'<div class=\"single-product-img clearfix hover-effect\"><a href=\"#\"><img class=\"productlink primary-image\" src=\"\" alt=\"product\">'+
-'</a><div class=\"wish-icon-hover text-center clearfix\"><div class=\"hover-text\"><tag></tag><ul><li><a class=\"modal-view popModal\" href=\"#\" data-toggle=\"modal\" data-id=\"id\" data-target=\"#productModal\" onclick=\"getId(this.dataset.id)\"><i class=\"fa fa-eye\"></i></a></li></ul></div></div></div></div></div></div>'
-};
-for(var o in productDatas.whitewine){
-whiteHTML +='<div class=\"col-xs-12 col-width\"><div class=\"single-product\"><div class=\"single-product-item\">'+
-'<div class=\"single-product-img clearfix hover-effect\"><a href=\"#\"><img class=\"productlink primary-image\" src=\"\" alt=\"product\">'+
-'</a><div class=\"wish-icon-hover text-center clearfix\"><div class=\"hover-text\"><tag></tag><ul><li><a class=\"modal-view popModal\" href=\"#\" data-toggle=\"modal\" data-id=\"id\" data-target=\"#productModal\" onclick=\"getId(this.dataset.id)\"><i class=\"fa fa-eye\"></i></a></li></ul></div></div></div></div></div></div>'
-};
-for(var o in productDatas.package){
-packageHTML +='<div class=\"col-xs-12 col-width\"><div class=\"single-product\"><div class=\"single-product-item\">'+
-'<div class=\"single-product-img clearfix hover-effect\"><a href=\"#\"><img class=\"productlink primary-image\" src=\"\" alt=\"product\">'+
-'</a><div class=\"wish-icon-hover text-center clearfix\"><div class=\"hover-text\"><tag></tag><ul><li><a class=\"modal-view popModal\" href=\"#\" data-toggle=\"modal\" data-id=\"id\" data-target=\"#productModal\" onclick=\"getId(this.dataset.id)\"><i class=\"fa fa-eye\"></i></a></li></ul></div></div></div></div></div></div>'
-};
-redwine.innerHTML = redHTML;
-whitewine.innerHTML = whiteHTML;
-package.innerHTML = packageHTML;
-for (var o in productDatas.redwine){
-let needName = document.getElementsByTagName('tag');
-let popTag = document.getElementsByClassName('popModal');
-popTag[i].dataset.id = productDatas.redwine[o].id;
-needName[i].innerHTML = productDatas.redwine[o].name;
-let linkName = document.getElementsByClassName('productlink');
-linkName[i].src = productDatas.redwine[o].productlink;
-i++;
-};
-for (var o in productDatas.whitewine){
-let needName = document.getElementsByTagName('tag');
-let popTag = document.getElementsByClassName('popModal');
-popTag[i].dataset.id = productDatas.whitewine[o].id;
-needName[i].innerHTML = productDatas.whitewine[o].name;
-let linkName = document.getElementsByClassName('productlink');
-linkName[i].src = productDatas.whitewine[o].productlink;
-i++;
-};
-for (var o in productDatas.package){
-let needName = document.getElementsByTagName('tag');
-let popTag = document.getElementsByClassName('popModal');
-popTag[i].dataset.id = productDatas.package[o].id;
-needName[i].innerHTML = productDatas.package[o].name;
-let linkName = document.getElementsByClassName('productlink');
-linkName[i].src = productDatas.package[o].productlink;
-i++;
-};
-popBox.innerHTML ='<div class=\"modal fade\" id=\"productModal\" tabindex=\"-1\" role=\"dialog\">'+
-'<div class=\"modal-dialog\" role=\"document\"><div class=\"modal-content\"><div class=\"modal-header\">'+
-'<button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span>'+
-'</button></div><div class=\"modal-body\"><div class=\"modal-product\"><div class=\"product-images\"><div class=\"main-image images\">'+
-'<img alt=\"\" src=\"assets/img/redwine/dedahoujue.jpg\"></div></div><div class=\"product-info\">'+
-'<h1 style=\"margin-bottom:40px;\" id=\"productName\"></h1>'+
-'<hgroup style=\"color:gray;font-size:20px\"><h4>产地：<span id=\"productPlace\"><span/></h4>'+
-'<h4>年份：<span id=\"yearDate\"><span/></h4><h4>酒精度：<span id=\"winePercent\"><span/></h4>'+
-'<h4>产区：<span id=\"productArea\"><span/></h4><h4>葡萄品种：<span id=\"detailkinds\"><span/></h4></hgroup>'+
-'<div class=\"quick-desc\" style=\"margin-top:20px;color:gray;\">'+
-'<span>品酒辞：</span></span><span id=\"wineSaying\"></span></div></div></div></div></div></div></div>';
-var productName = document.getElementById('productName');
-var productPlace = document.getElementById('productPlace');
-var yearDate = document.getElementById('yearDate');
-var winePercent = document.getElementById('winePercent');
-var productArea = document.getElementById('productArea');
-var detailkinds = document.getElementById('detailkinds');
-var wineSaying = document.getElementById('wineSaying');
-function getId(id){
-var whichKind = id.slice(0,id.indexOf('_'));
-var whichDetailId = id.slice(id.indexOf('_')+1);
-if(whichKind == 'red'){
-productName.innerHTML = productDatas.redwine[whichDetailId].productName;
-productPlace.innerHTML = productDatas.redwine[whichDetailId].productPlace;
-yearDate.innerHTML = productDatas.redwine[whichDetailId].yearDate;
-winePercent.innerHTML = productDatas.redwine[whichDetailId].winePercent;
-productArea.innerHTML = productDatas.redwine[whichDetailId].productArea;
-detailkinds.innerHTML = productDatas.redwine[whichDetailId].detailkinds;
-wineSaying.innerHTML = productDatas.redwine[whichDetailId].wineSaying;
-} else if(whichKind == 'white'){
-productName.innerHTML = productDatas.whitewine[whichDetailId].productName;
-productPlace.innerHTML = productDatas.whitewine[whichDetailId].productPlace;
-yearDate.innerHTML = productDatas.whitewine[whichDetailId].yearDate;
-winePercent.innerHTML = productDatas.whitewine[whichDetailId].winePercent;
-productArea.innerHTML = productDatas.whitewine[whichDetailId].productArea;
-detailkinds.innerHTML = productDatas.whitewine[whichDetailId].detailkinds;
-wineSaying.innerHTML = productDatas.whitewine[whichDetailId].wineSaying;
-}
-};
+      for (var o in productDatas.redwine) {
+        redHTML += '<div class=\"col-xs-12 col-width\"><div class=\"single-product\"><div class=\"single-product-item\">' + '<div class=\"single-product-img clearfix hover-effect\"><a href=\"#\"><img class=\"productlink primary-image\" src=\"\" alt=\"product\">' + '</a><div class=\"wish-icon-hover text-center clearfix\"><div class=\"hover-text\"><tag></tag><ul><li><a class=\"modal-view popModal\" href=\"#\" data-toggle=\"modal\" data-id=\"id\" data-target=\"#productModal\" onclick=\"getId(this.dataset.id)\"><i class=\"fa fa-eye\"></i></a></li></ul></div></div></div></div></div></div>'
+      };
+ 
+      for (var o in productDatas.whitewine) {
+        whiteHTML += '<div class=\"col-xs-12 col-width\"><div class=\"single-product\"><div class=\"single-product-item\">' + '<div class=\"single-product-img clearfix hover-effect\"><a href=\"#\"><img class=\"productlink primary-image\" src=\"\" alt=\"product\">' + '</a><div class=\"wish-icon-hover text-center clearfix\"><div class=\"hover-text\"><tag></tag><ul><li><a class=\"modal-view popModal\" href=\"#\" data-toggle=\"modal\" data-id=\"id\" data-target=\"#productModal\" onclick=\"getId(this.dataset.id)\"><i class=\"fa fa-eye\"></i></a></li></ul></div></div></div></div></div></div>'
+      };
+      for (var o in productDatas.package) {
+        packageHTML += '<div class=\"col-xs-12 col-width\"><div class=\"single-product\"><div class=\"single-product-item\">' + '<div class=\"single-product-img clearfix hover-effect\"><a href=\"#\"><img class=\"productlink primary-image\" src=\"\" alt=\"product\">' + '</a><div class=\"wish-icon-hover text-center clearfix\"><div class=\"hover-text\"><tag></tag><ul><li><a class=\"modal-view popModal\" href=\"#\" data-toggle=\"modal\" data-id=\"id\" data-target=\"#productModal\" onclick=\"getId(this.dataset.id)\"><i class=\"fa fa-eye\"></i></a></li></ul></div></div></div></div></div></div>'
+      };
+      redwine.innerHTML = redHTML;
+      whitewine.innerHTML = whiteHTML;
+      package.innerHTML = packageHTML;
+      for (var o in productDatas.redwine) {
+        let needName = document.getElementsByTagName('tag');
+        let popTag = document.getElementsByClassName('popModal');
+        popTag[i].dataset.id = productDatas.redwine[o].id;
+        needName[i].innerHTML = productDatas.redwine[o].name;
+        let linkName = document.getElementsByClassName('productlink');
+        linkName[i].src = productDatas.redwine[o].productlink;
+        i++;
+      };
+      for (var o in productDatas.whitewine) {
+        let needName = document.getElementsByTagName('tag');
+        let popTag = document.getElementsByClassName('popModal');
+        popTag[i].dataset.id = productDatas.whitewine[o].id;
+        needName[i].innerHTML = productDatas.whitewine[o].name;
+        let linkName = document.getElementsByClassName('productlink');
+        linkName[i].src = productDatas.whitewine[o].productlink;
+        i++;
+      };
+      for (var o in productDatas.package) {
+        let needName = document.getElementsByTagName('tag');
+        let popTag = document.getElementsByClassName('popModal');
+        popTag[i].dataset.id = productDatas.package[o].id;
+        needName[i].innerHTML = productDatas.package[o].name;
+        let linkName = document.getElementsByClassName('productlink');
+        linkName[i].src = productDatas.package[o].productlink;
+        i++;
+      };
+      popBox.innerHTML = '<div class=\"modal fade\" id=\"productModal\" tabindex=\"-1\" role=\"dialog\">' + '<div class=\"modal-dialog\" role=\"document\"><div class=\"modal-content\"><div class=\"modal-header\">' + '<button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span>' + '</button></div><div class=\"modal-body\"><div class=\"modal-product\"><div class=\"product-images\"><div class=\"main-image images\">' + '<img id=\"productlink\" alt=\"\" src=\"\"></div></div><div class=\"product-info\">' + '<h1 style=\"margin-bottom:40px;\" id=\"productName\"></h1>' + '<hgroup style=\"color:gray;font-size:20px\"><h4>产地：<span id=\"productPlace\"><span/></h4>' + '<h4>年份：<span id=\"yearDate\"><span/></h4><h4>酒精度：<span id=\"winePercent\"><span/></h4>' + '<h4>产区：<span id=\"productArea\"><span/></h4><h4>葡萄品种：<span id=\"detailkinds\"><span/></h4></hgroup>' + '<div class=\"quick-desc\" style=\"margin-top:20px;color:gray;\">' + '<span>品酒辞：</span></span><span id=\"wineSaying\"></span></div></div></div></div></div></div></div>';
+      var productName = document.getElementById('productName');
+      var productPlace = document.getElementById('productPlace');
+      var yearDate = document.getElementById('yearDate');
+      var winePercent = document.getElementById('winePercent');
+      var productArea = document.getElementById('productArea');
+      var detailkinds = document.getElementById('detailkinds');
+      var wineSaying = document.getElementById('wineSaying');
+      var productlink = document.getElementById('productlink');
+     // console.log($(productlink).attr("src");
+      function getId(id) {
+        var whichKind = id.slice(0, id.indexOf('_'));
+        var whichDetailId = id.slice(id.indexOf('_') + 1);
+        if (whichKind == 'red') {
+          productName.innerHTML = productDatas.redwine[whichDetailId].productName;
+          productPlace.innerHTML = productDatas.redwine[whichDetailId].productPlace;
+          yearDate.innerHTML = productDatas.redwine[whichDetailId].yearDate;
+          winePercent.innerHTML = productDatas.redwine[whichDetailId].winePercent;
+          productArea.innerHTML = productDatas.redwine[whichDetailId].productArea;
+          detailkinds.innerHTML = productDatas.redwine[whichDetailId].detailkinds;
+          wineSaying.innerHTML = productDatas.redwine[whichDetailId].wineSaying;
+          productlink.src = productDatas.redwine[whichDetailId].productlink;
+        } else if (whichKind == 'white') {
+          productName.innerHTML = productDatas.whitewine[whichDetailId].productName;
+          productPlace.innerHTML = productDatas.whitewine[whichDetailId].productPlace;
+          yearDate.innerHTML = productDatas.whitewine[whichDetailId].yearDate;
+          winePercent.innerHTML = productDatas.whitewine[whichDetailId].winePercent;
+          productArea.innerHTML = productDatas.whitewine[whichDetailId].productArea;
+          detailkinds.innerHTML = productDatas.whitewine[whichDetailId].detailkinds;
+          wineSaying.innerHTML = productDatas.whitewine[whichDetailId].wineSaying;
+          productlink.src = productDatas.whitewine[whichDetailId].productlink;
+        }else if (whichKind == 'package'){
+          productName.innerHTML = productDatas.package[whichDetailId].name;
+          productlink.src = productDatas.package[whichDetailId].productlink;
+          productPlace.innerHTML = "";
+          yearDate.innerHTML = "";
+          winePercent.innerHTML = "";
+          productArea.innerHTML = "";
+          detailkinds.innerHTML = "";
+          wineSaying.innerHTML = "";
+        }
 
-</script>
-<!-- footer-bottom -->
-<script src="assets/plugins/jquery-1.9.1.min.js"></script>
-<!-- BOOTSTRAP SCRIPTS  -->
-<script src="assets/plugins/bootstrap.js"></script>
-<!-- CUSTOM SCRIPTS  导航条模板-->
-<script src="assets/js/custom.js"></script>
+      };</script>
+    <!-- footer-bottom
+    <script src="assets/plugins/jquery-1.9.1.min.js"></script> -->
 
-<script src="assets/plugins/jquery-1.12.4.min.js"></script>
-<script src="assets/plugins/jquery.meanmenu.js"></script>
-<script src="assets/js/wow.min.js"></script>
-<script src="assets/js/owl.carousel.min.js"></script>
-<script src="assets/js/wow.min.js"></script>
-<script src="assets/js/main.js"></script>
+    <!-- BOOTSTRAP SCRIPTS -->
+    <script src="assets/plugins/bootstrap.js"></script>
+    <!-- CUSTOM SCRIPTS 导航条模板-->
+    <script src="assets/js/custom.js"></script>
+    <!--<script src="assets/plugins/jquery-1.12.4.min.js"></script> -->
+    <script src="assets/plugins/jquery.meanmenu.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
 
+   
+    <a href="#" id="toTop" style="display: block;">
+      <span id="toTopHover" style="opacity: 1;"></span>
+    </a>
+    <!-- content-Get-in-touch -->
+    <script type="text/javascript" src="assets/js/move-top.js"></script>
+    <script type="text/javascript" src="assets/js/easing.js"></script>
+	<script type="text/javascript" src="assets/js/unslider.min.js"></script>
+	
+	
+  </body>
 
-
-<script type="text/javascript">
-    // $('.carousel').carousel({
-    //     interval: 5000
-    // })
-    $(document).ready(function() {
-
-        var defaults = {
-            containerID : 'toTop', // fading element id
-            containerHoverID : 'toTopHover', // fading element hover id
-            scrollSpeed : 1200,
-            easingType : 'linear'
-        };
-
-        $().UItoTop({
-            easingType : 'easeOutQuart'
-        });
-
-    });
-</script>
-<a href="#" id="toTop" style="display: block;"> <span
-        id="toTopHover" style="opacity: 1;"> </span></a>
-<!-- content-Get-in-touch -->
-<script type="text/javascript" src="assets/js/move-top.js"></script>
-<script type="text/javascript" src="assets/js/easing.js"></script>
-</body>
 </html>
